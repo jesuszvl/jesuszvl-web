@@ -1,4 +1,4 @@
-import "./Experience.css";
+import styles from "./Experience.module.scss";
 
 import ieebc from "./ieebc.png";
 import timbox from "./timbox.png";
@@ -42,8 +42,8 @@ const EXPERIENCE = [
 
 const Experience = () => {
   return (
-    <div className="experience-container">
-      <div className="experience">
+    <div className={styles["experience-container"]}>
+      <div className={styles["experience"]}>
         <h1>Experience</h1>
         <p>
           Quick summary of places I contributed delivering high quality code
