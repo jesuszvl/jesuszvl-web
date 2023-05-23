@@ -1,9 +1,9 @@
-import "./About.css";
+import styles from "./About.module.scss";
 
-const About = () => {
+export default function About() {
   return (
-    <div className="about-container">
-      <div className="about">
+    <div className={styles["about-container"]}>
+      <div className={styles["about"]}>
         <h1>About me</h1>
         <p>
           Hello! ✌🏽 My name is Jesús, and I am a software engineer from
@@ -23,6 +23,4 @@ const About = () => {
       </div>
     </div>
   );
-};
-
-export default About;
+}
