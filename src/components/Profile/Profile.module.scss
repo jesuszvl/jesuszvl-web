@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   gap: 24px;
-  padding: 36px 24px;
+  padding: 48px 24px;
 
   @media (max-width: 560px) {
     flex-direction: column;
@@ -33,13 +33,14 @@
   font-size: 48px;
   color: #0e67c5;
   word-wrap: break-word;
+  line-height: 1;
 }
 
 .subtitle {
   font-size: 18px;
   color: white;
   line-height: 1;
-  padding-bottom: 16px;
+  padding: 16px 0px;
   margin: 0px;
 }
 

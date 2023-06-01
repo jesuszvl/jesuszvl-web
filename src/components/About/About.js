@@ -4,21 +4,30 @@ export default function About() {
   return (
     <div className={styles["about-container"]}>
       <div className={styles["about"]}>
-        <h1>About me</h1>
+        <h1>Engineering</h1>
         <p>
-          Hello! ✌🏽 My name is Jesús, and I am a software engineer from
-          Mexicali, Mexico with over 11 years of experience in the industry.{" "}
+          When it comes to building JavaScript applications, I've got the tools
+          that make the magic happen. But hey, I'm not dependent on them—I can
+          roll up my sleeves and deliver blazing-fast solutions that can handle
+          anything, no matter the scale.{" "}
         </p>
         <p>
-          Currently, I am focusing on creating frontend web applications using
-          React and JavaScript. In addition to my expertise in frontend
-          development, I also have experience as a fullstack engineer, with
-          skills in languages such as Python, Ruby, and PHP.
+          Performance and scalability? Yeah, those are definitely high on my
+          list of priorities. I'll make sure your app runs like a well-oiled
+          machine, ticking all the boxes for speed and resilience
+        </p>
+
+        <h1>Design</h1>
+        <p>
+          I'm definitely not your average designer, hunched over an Illustrator
+          artboard, obsessing over every pixel. Nah, that's not my style. You'll
+          find me deep in the realm of stylesheets, tinkering with font sizes
+          and playing around with layouts.
         </p>
         <p>
-          I am highly dedicated to my work and always seeking out new
-          opportunities to improve my skills and knowledge in the field of
-          software development.
+          My mission is to create user experiences that feel like a breeze,
+          while also looking super fly. I'm all about making things smooth and
+          trendy, so you can bet I'll bring some serious style to the table.
         </p>
       </div>
     </div>
