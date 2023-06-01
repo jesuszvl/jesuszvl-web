@@ -6,29 +6,20 @@ import profile from "./jesuszvl.jpg";
 const Profile = () => {
   return (
     <div className={styles["profile-container"]}>
+      <div className={styles["description"]}>
+        <span className={styles["title"]}>Software Engineer</span>
+        <p className={styles["subtitle"]}>
+          I like to craft scalable software solutions that deliver exceptional
+          user experiences.
+        </p>
+      </div>
       <Image
         className={styles["photo"]}
         src={profile}
         alt="Jesús Zavala"
-        width={160}
-        height={160}
+        width={200}
+        height={200}
       />
-      <h1 className={styles["name"]}>Jesús Zavala</h1>
-      <p className={styles["title"]}>Software Engineer</p>
-      <div className={styles["social"]}>
-        <a className={styles["link"]} href="https://github.com/jesuszvl">
-          <i className={styles[("bi", "bi-github", "icon")]}></i>
-        </a>
-        <a
-          className={styles["link"]}
-          href="https://www.linkedin.com/in/jesuszvl/"
-        >
-          <i className={styles["bi bi-linkedin icon"]}></i>
-        </a>
-        <a className={styles["link"]} href="https://twitter.com/jesuszvI">
-          <i className={styles["bi bi-twitter icon"]}></i>
-        </a>
-      </div>
     </div>
   );
 };
