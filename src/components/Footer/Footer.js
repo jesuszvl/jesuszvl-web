@@ -7,7 +7,7 @@ const Footer = () => {
         <p className={styles["footer-content"]}>
           developed by{" "}
           <a href="https://makah.co" className={styles["footer-link"]}>
-            makahco ®
+            makahcomx ®
           </a>
         </p>
       </div>
