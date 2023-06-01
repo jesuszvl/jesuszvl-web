@@ -13,6 +13,7 @@ const Navbar = () => {
   ];
 
   const trackLinkClick = (linkName) => {
+    ReactGA.initialize("G-K32RW6EE92");
     ReactGA.event({
       category: "Navbar",
       action: `Clicked ${linkName} link`,
