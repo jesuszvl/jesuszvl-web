@@ -1,0 +1,46 @@
+.navbar {
+  color: white;
+  background-color: #1e2124;
+  height: 80px;
+  padding: 0px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.sign {
+  color: #0e67c5;
+}
+
+.menu {
+  display: flex;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 600;
+
+  @media (max-width: 560px) {
+    display: none;
+  }
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+
+  @media (max-width: 560px) {
+    display: flex;
+  }
+}
+
+.link {
+  text-decoration: none !important;
+
+  &:hover {
+    color: #0e67c5;
+  }
+}
