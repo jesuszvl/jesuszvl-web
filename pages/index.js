@@ -15,6 +15,7 @@ export default function Index() {
     <div className="container">
       <Head>
         <title>JESUSZVL | Home</title>
+        <meta name="description" content="Software Engineer"></meta>
       </Head>
       <Navbar />
       <Profile />
