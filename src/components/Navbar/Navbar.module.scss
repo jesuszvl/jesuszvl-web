@@ -1,16 +1,19 @@
 .navbar {
   color: white;
   background-color: #1e2124;
-  height: 80px;
-  padding: 0px 24px;
+  padding: 16px 32px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 560px) {
+    padding: 16px;
+  }
 }
 
 .company {
-  font-size: 28px;
-  font-weight: 900;
+  font-size: 32px;
+  font-weight: 800;
 }
 
 .sign {
@@ -21,7 +24,7 @@
   display: flex;
   gap: 12px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
 
   @media (max-width: 560px) {
     display: none;

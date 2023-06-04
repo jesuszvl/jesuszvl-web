@@ -6,10 +6,10 @@ import MenuIcon from "../../icons/MenuIcon";
 const Navbar = () => {
   const links = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/" },
-    { name: "Portfolio", href: "/" },
-    { name: "Blog", href: "/" },
-    { name: "Contact", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Portfolio", href: "/portfolio" },
+    { name: "Blog", href: "/blog" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const trackLinkClick = (linkName) => {
@@ -22,9 +22,12 @@ const Navbar = () => {
 
   return (
     <div className={styles.navbar}>
-      <span className={styles.company}>
-        JESUS<span className={styles.sign}>ZVL</span>
-      </span>
+      <Link href="/">
+        <span className={styles.company}>
+          JESUS<span className={styles.sign}>ZVL</span>
+        </span>
+      </Link>
+
       <div className={styles.menu}>
         {links.map((link, index) => (
           <Link

@@ -1,7 +1,5 @@
 import ReactGA from "react-ga4";
-
 import Profile from "../src/components/Profile/Profile";
-import About from "../src/components/About/About";
 import Experience from "../src/components/Experience/Experience";
 import Footer from "../src/components/Footer/Footer";
 import Navbar from "../src/components/Navbar/Navbar";
@@ -19,7 +17,6 @@ export default function Index() {
       </Head>
       <Navbar />
       <Profile />
-      <About />
       <Experience />
       <Footer />
     </div>
