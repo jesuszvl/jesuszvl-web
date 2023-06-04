@@ -48,9 +48,11 @@ const Experience = () => {
         <p>
           Quick summary of places I contributed delivering high quality code
         </p>
-        {EXPERIENCE.map((company) => {
-          return <Company key={company.name} company={company} />;
-        })}
+        <div className={styles["experience-list"]}>
+          {EXPERIENCE.map((company) => {
+            return <Company key={company.name} company={company} />;
+          })}
+        </div>
       </div>
     </div>
   );
