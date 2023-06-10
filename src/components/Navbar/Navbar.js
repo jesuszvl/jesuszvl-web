@@ -1,11 +1,14 @@
+import { useState } from "react";
 import ReactGA from "react-ga4";
 import Link from "next/link";
 import styles from "./Navbar.module.scss";
 import MenuIcon from "../../icons/MenuIcon";
+import { render } from "@testing-library/react";
+import CloseIcon from "../../icons/CloseIcon";
 
 const Navbar = () => {
+  const [isMenuActive, setIsMenuActive] = useState(false);
   const links = [
-    { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "Blog", href: "/blog" },
@@ -20,33 +23,56 @@ const Navbar = () => {
     });
   };
 
-  return (
-    <div className={styles.navbar}>
-      <Link href="/">
-        <span className={styles.company}>
-          JESUS<span className={styles.sign}>ZVL</span>
-        </span>
-      </Link>
-
-      <div className={styles.menu}>
+  const renderDropdownMenu = () => {
+    return (
+      <div className={styles["dropdown-menu"]}>
         {links.map((link, index) => (
           <Link
             key={index}
             href={link.href}
-            className={styles.link}
+            className={styles["dropdown-menu-link"]}
             onClick={() => trackLinkClick(link.name)}
           >
             {link.name}
           </Link>
         ))}
       </div>
-      <div
-        className={styles["menu-icon"]}
-        onClick={() => trackLinkClick("Menu")}
-      >
-        <MenuIcon />
+    );
+  };
+
+  return (
+    <>
+      <div className={styles.navbar}>
+        <Link href="/">
+          <span className={styles.company}>
+            JESUS<span className={styles.sign}>ZVL</span>
+          </span>
+        </Link>
+
+        <div className={styles.menu}>
+          {links.map((link, index) => (
+            <Link
+              key={index}
+              href={link.href}
+              className={styles.link}
+              onClick={() => trackLinkClick(link.name)}
+            >
+              {link.name}
+            </Link>
+          ))}
+        </div>
+        <div
+          className={styles["menu-icon"]}
+          onClick={() => {
+            trackLinkClick("Menu");
+            setIsMenuActive(!isMenuActive);
+          }}
+        >
+          {!isMenuActive ? <MenuIcon /> : <CloseIcon />}
+        </div>
       </div>
-    </div>
+      {isMenuActive && renderDropdownMenu()}
+    </>
   );
 };
 
