@@ -20,7 +20,7 @@ const Company = ({ company }) => {
         <Image
           src={logo}
           alt={name}
-          height={42}
+          height={24}
           onClick={() => trackLinkClick(name)}
         />
       </Link>
