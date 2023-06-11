@@ -9,8 +9,6 @@ import CloseIcon from "../../icons/CloseIcon";
 const Navbar = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
   const links = [
-    { name: "About", href: "/about" },
-    { name: "Portfolio", href: "/portfolio" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ];
