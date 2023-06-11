@@ -3,6 +3,8 @@ import Profile from "../src/components/Profile/Profile";
 import Experience from "../src/components/Experience/Experience";
 import Footer from "../src/components/Footer/Footer";
 import Navbar from "../src/components/Navbar/Navbar";
+import About from "../src/components/About/About";
+import Presentation from "../src/components/Presentation/Presentation";
 import Head from "next/head";
 
 ReactGA.initialize("G-K32RW6EE92");
@@ -17,7 +19,9 @@ export default function Index() {
       </Head>
       <Navbar />
       <Profile />
+      <About />
       <Experience />
+      <Presentation />
       <Footer />
     </div>
   );

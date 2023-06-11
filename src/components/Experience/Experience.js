@@ -44,9 +44,10 @@ const Experience = () => {
   return (
     <div className={styles["experience-container"]}>
       <div className={styles["experience"]}>
-        <h1>Experience</h1>
+        <h1>Where I&apos;ve worked?</h1>
         <p>
-          Quick summary of places I contributed delivering high quality code
+          Here&apos;s a quick summary of places I contributed delivering high
+          quality code. Click on each company to read about my time there.
         </p>
         <div className={styles["experience-list"]}>
           {EXPERIENCE.map((company) => {
