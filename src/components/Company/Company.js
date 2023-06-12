@@ -2,6 +2,7 @@ import ReactGA from "react-ga4";
 import Image from "next/image";
 import styles from "./Company.module.scss";
 import Link from "next/link";
+import LogoSmall from "../Experience/LogoSmall";
 
 const Company = ({ company }) => {
   const { name, url, logo, time } = company;

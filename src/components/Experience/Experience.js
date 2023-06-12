@@ -1,10 +1,10 @@
 import styles from "./Experience.module.scss";
 
-import ieebc from "./ieebc.png";
-import timbox from "./timbox.png";
-import srax from "./srax.png";
+import ieebc from "./ieebc.svg";
+import timbox from "./timbox.svg";
+import srax from "./srax.svg";
 import iconos from "./iconos.png";
-import gametime from "./gametime.png";
+import gametime from "./gametime.svg";
 import Company from "../Company/Company";
 
 const EXPERIENCE = [
