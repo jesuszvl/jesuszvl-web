@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: row;
   gap: 32px;
+  padding: 16px 0px 0px;
 
   @media (max-width: 560px) {
     flex-direction: column;
@@ -34,4 +35,9 @@
   img {
     border: 0.5px solid darkgray;
   }
+}
+
+.subtitle {
+  text-align: justify;
+  text-justify: inter-word;
 }

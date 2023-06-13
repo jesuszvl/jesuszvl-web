@@ -18,10 +18,9 @@ export default function Presentation() {
     <div className={styles["presentation-container"]}>
       <div className={styles["presentation"]}>
         <h1>Portfolio</h1>
-        <p>
+        <p className={styles["subtitle"]}>
           Take a look to a few personal projects I&apos;m currently working on
         </p>
-
         <div className={styles["projects"]}>
           <div className={styles["project"]}>
             <Link
