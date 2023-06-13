@@ -2,7 +2,6 @@ import ReactGA from "react-ga4";
 import Image from "next/image";
 import styles from "./Company.module.scss";
 import Link from "next/link";
-import LogoSmall from "../Experience/LogoSmall";
 
 const Company = ({ company }) => {
   const { name, url, logo, time } = company;
@@ -21,7 +20,7 @@ const Company = ({ company }) => {
         <Image
           src={logo}
           alt={name}
-          height={24}
+          height={32}
           onClick={() => trackLinkClick(name)}
         />
       </Link>
