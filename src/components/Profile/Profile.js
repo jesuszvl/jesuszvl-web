@@ -19,6 +19,7 @@ const Profile = () => {
         alt="Jesús Zavala"
         width={250}
         height={250}
+        priority
       />
     </div>
   );
