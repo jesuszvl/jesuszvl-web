@@ -20,8 +20,8 @@ export default function Index() {
       <Navbar />
       <Profile />
       <About />
-      <Experience />
       <Presentation />
+      <Experience />
       <Footer />
     </div>
   );
