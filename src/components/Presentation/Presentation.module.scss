@@ -1,19 +1,8 @@
 @import "../../styles/colors.constants";
 
-.presentation-container {
-  background-color: $main-gray;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 24px 16px;
-}
-
 .presentation {
-  color: white;
-  max-width: 700px;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .projects {
@@ -35,9 +24,4 @@
   img {
     border: 0.5px solid darkgray;
   }
-}
-
-.subtitle {
-  text-align: justify;
-  text-justify: inter-word;
 }

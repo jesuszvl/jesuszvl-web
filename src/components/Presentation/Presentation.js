@@ -4,6 +4,7 @@ import ReactGA from "react-ga4";
 import styles from "./Presentation.module.scss";
 import vodyet from "./vodyet.jpg";
 import makahco from "./makahco.jpg";
+import SectionContainer from "../SectionContainer/SectionContainer";
 
 export default function Presentation() {
   const trackLinkClick = (projectName) => {
@@ -15,10 +16,10 @@ export default function Presentation() {
   };
 
   return (
-    <div className={styles["presentation-container"]}>
+    <SectionContainer>
       <div className={styles["presentation"]}>
         <h1>My Portfolio</h1>
-        <p className={styles["subtitle"]}>
+        <p>
           Take a look to a few personal projects I&apos;m currently working on.
         </p>
         <div className={styles["projects"]}>
@@ -52,6 +53,6 @@ export default function Presentation() {
           </div>
         </div>
       </div>
-    </div>
+    </SectionContainer>
   );
 }

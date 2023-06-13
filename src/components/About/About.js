@@ -14,14 +14,15 @@ import next from "./next.svg";
 import ruby from "./ruby.svg";
 import php from "./php.svg";
 import java from "./java.svg";
+import SectionContainer from "../SectionContainer/SectionContainer";
 
 export default function About() {
   return (
-    <div className={styles["about-container"]}>
+    <SectionContainer>
       <div className={styles["about"]}>
-        <h1 className={styles["about-title"]}>What I&apos;m good for?</h1>
+        <h1>What I&apos;m good for?</h1>
         <h2 className={styles["section-title"]}>Frontend</h2>
-        <p className={styles["subtitle"]}>
+        <p>
           When it comes to building JavaScript applications, I&apos;ve got the
           tools that make the magic happen. But hey, I&apos;m not dependent on
           them—I can roll up my sleeves and deliver blazing-fast solutions that
@@ -35,7 +36,7 @@ export default function About() {
           <Image src={javascript} height={48} alt={"Javascript"} />
         </div>
         <h2 className={styles["section-title"]}>Backend</h2>
-        <p className={styles["subtitle"]}>
+        <p>
           Performance and scalability? Yeah, those are definitely high on my
           list of priorities. I&apos;ll make sure your app runs like a
           well-oiled machine, ticking all the boxes for speed and resilience.
@@ -66,6 +67,6 @@ export default function About() {
           <Image src={figma} height={48} alt={"Figma"} />
         </div>
       </div>
-    </div>
+    </SectionContainer>
   );
 }

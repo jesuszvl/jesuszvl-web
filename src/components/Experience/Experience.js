@@ -6,6 +6,7 @@ import srax from "./srax.svg";
 import iconos from "./iconos.png";
 import gametime from "./gametime.svg";
 import Company from "../Company/Company";
+import SectionContainer from "../SectionContainer/SectionContainer";
 
 const EXPERIENCE = [
   {
@@ -42,7 +43,7 @@ const EXPERIENCE = [
 
 const Experience = () => {
   return (
-    <div className={styles["experience-container"]}>
+    <SectionContainer>
       <div className={styles["experience"]}>
         <h1>Where I&apos;ve worked?</h1>
         <p>
@@ -55,7 +56,7 @@ const Experience = () => {
           })}
         </div>
       </div>
-    </div>
+    </SectionContainer>
   );
 };
 
