@@ -61,3 +61,15 @@
 .icon:hover {
   color: $main-white;
 }
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}

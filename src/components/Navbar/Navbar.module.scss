@@ -52,9 +52,10 @@
 
 .dropdown-menu {
   width: 100%;
-  background-color: $main-gray;
+  background-color: $main-blue;
   position: absolute;
   border-top: 1px solid $main-black;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
   display: none;
   flex-direction: column;
 
@@ -74,5 +75,5 @@
   font-size: 18px;
   text-align: center;
 
-  border-bottom: 1px solid $main-black;
+  border-bottom: 1px solid $main-gray;
 }

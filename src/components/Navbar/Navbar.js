@@ -8,10 +8,7 @@ import CloseIcon from "../../icons/CloseIcon";
 
 const Navbar = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
-  const links = [
-    { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "/contact" },
-  ];
+  const links = [{ name: "Blog", href: "/blog" }];
 
   const trackLinkClick = (linkName) => {
     ReactGA.initialize("G-K32RW6EE92");
@@ -29,7 +26,10 @@ const Navbar = () => {
             key={link.name}
             href={link.href}
             className={styles["dropdown-menu-link"]}
-            onClick={() => trackLinkClick(link.name)}
+            onClick={() => {
+              trackLinkClick(link.name);
+              setIsMenuActive(!isMenuActive);
+            }}
           >
             {link.name}
           </Link>

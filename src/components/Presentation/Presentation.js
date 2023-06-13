@@ -17,9 +17,9 @@ export default function Presentation() {
   return (
     <div className={styles["presentation-container"]}>
       <div className={styles["presentation"]}>
-        <h1>Portfolio</h1>
+        <h1>My Portfolio</h1>
         <p className={styles["subtitle"]}>
-          Take a look to a few personal projects I&apos;m currently working on
+          Take a look to a few personal projects I&apos;m currently working on.
         </p>
         <div className={styles["projects"]}>
           <div className={styles["project"]}>
@@ -39,7 +39,7 @@ export default function Presentation() {
 
           <div className={styles["project"]}>
             <Link
-              href={"https://www.vodyet.com"}
+              href={"https://makahco.com"}
               onClick={() => trackLinkClick("Makahco")}
               target="_blank"
             >
