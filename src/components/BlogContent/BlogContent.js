@@ -1,9 +1,11 @@
 import styles from "./BlogContent.module.scss";
 
-const BlogContent = () => {
+const BlogContent = ({ message }) => {
   return (
     <div className={styles["blog-container"]}>
-      <h2>Almost done...</h2>
+      <div className={styles["blog-message"]}>
+        <h2>{message}</h2>
+      </div>
     </div>
   );
 };

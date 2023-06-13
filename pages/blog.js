@@ -7,7 +7,17 @@ import Footer from "../src/components/Footer/Footer";
 ReactGA.initialize("G-K32RW6EE92");
 ReactGA.send({ hitType: "pageview", page: "/blog" });
 
-export default function Blog() {
+const messages = [
+  "Almost done 😪",
+  "Wait for it... 🤵‍♂️",
+  "I swear it worked on my computer 😅",
+  "Looks like the gremlins got into the code again 😨",
+  "It'll be home for Christmas 🎁",
+  "This is not the blog you looking for ✨",
+  "Yes! Well... Who's hungry? 🦖",
+];
+
+export default function Blog({ message }) {
   return (
     <div className="container">
       <Head>
@@ -15,8 +25,17 @@ export default function Blog() {
         <meta name="description" content="Software Engineer"></meta>
       </Head>
       <Navbar />
-      <BlogContent />
+      <BlogContent message={message} />
       <Footer />
     </div>
   );
+}
+
+export async function getServerSideProps() {
+  const message = messages[Math.floor(Math.random() * messages.length)];
+  return {
+    props: {
+      message,
+    },
+  };
 }

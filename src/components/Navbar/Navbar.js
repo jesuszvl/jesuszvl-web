@@ -24,9 +24,9 @@ const Navbar = () => {
   const renderDropdownMenu = () => {
     return (
       <div className={styles["dropdown-menu"]}>
-        {links.map((link, index) => (
+        {links.map((link) => (
           <Link
-            key={index}
+            key={link.name}
             href={link.href}
             className={styles["dropdown-menu-link"]}
             onClick={() => trackLinkClick(link.name)}

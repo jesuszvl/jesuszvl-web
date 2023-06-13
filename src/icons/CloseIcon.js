@@ -6,7 +6,7 @@ export default function CloseIcon({
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="icon icon-tabler icon-tabler-x"
+      className="icon icon-tabler icon-tabler-x"
       width={width}
       height={height}
       viewBox="0 0 24 24"
