@@ -9,7 +9,7 @@ trackPageView("/");
 
 export default function Index() {
   return (
-    <PageContainer title="Jesus ZVL | Home">
+    <PageContainer title="Jesus ZVL | Software Engineer">
       <Profile />
       <About />
       <Portfolio />

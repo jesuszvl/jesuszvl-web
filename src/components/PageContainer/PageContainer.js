@@ -9,7 +9,10 @@ const PageContainer = ({ children, title }) => {
     <div className={styles["page-container"]}>
       <Head>
         <title>{title}</title>
-        <meta name="description" content="Software Engineer"></meta>
+        <meta
+          name="description"
+          content="Software Engineer from Mexicali, México. Over 12+ years of experience"
+        ></meta>
       </Head>
       <Navbar />
       {children}
