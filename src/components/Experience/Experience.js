@@ -39,7 +39,7 @@ const EXPERIENCE = [
 
 const Experience = () => {
   return (
-    <SectionContainer>
+    <SectionContainer isDark>
       <div className={styles["experience"]}>
         <h1>Where I&apos;ve worked?</h1>
         <p>

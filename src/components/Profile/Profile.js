@@ -7,7 +7,7 @@ import SectionContainer from "../SectionContainer/SectionContainer";
 
 const Profile = () => {
   return (
-    <SectionContainer>
+    <SectionContainer isDark>
       <div className={styles["profile"]}>
         <div className={styles["description"]}>
           <span className={styles["title"]}>Software Engineer</span>

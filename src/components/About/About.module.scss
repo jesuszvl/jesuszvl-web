@@ -15,3 +15,20 @@
 .section-title {
   text-align: left;
 }
+
+.sections-container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+
+  @media (max-width: 560px) {
+    flex-direction: column;
+  }
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  flex: 1 1 0px;
+}
