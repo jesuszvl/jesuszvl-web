@@ -1,3 +1,4 @@
+import { random } from "lodash";
 import BlogContent from "../src/components/BlogContent/BlogContent";
 import { trackPageView } from "../src/utils/analytics";
 import PageContainer from "../src/components/PageContainer/PageContainer";
@@ -23,7 +24,7 @@ export default function Blog({ message }) {
 }
 
 export async function getServerSideProps() {
-  const message = messages[Math.floor(Math.random() * messages.length)];
+  const message = messages[Math.floor(random(messages.length - 1))];
   return {
     props: {
       message,
