@@ -1,10 +1,7 @@
 import Image from "next/image";
 
 import styles from "./Profile.module.scss";
-import profile from "./jesuszvl.jpg";
-import mail from "./mail.svg";
-import linkedin from "./linkedin.svg";
-import github from "./github.svg";
+import { SVG_LIBRARY } from "../../icons/library";
 import Link from "next/link";
 import SectionContainer from "../SectionContainer/SectionContainer";
 
@@ -22,7 +19,7 @@ const Profile = () => {
         <div className={styles["contact-card"]}>
           <Image
             className={styles["photo"]}
-            src={profile}
+            src={SVG_LIBRARY.PROFILE}
             alt="Jesús Zavala"
             width={250}
             height={250}
@@ -30,13 +27,23 @@ const Profile = () => {
           />
           <div className={styles["contact"]}>
             <Link href="mailto: jesus@jesuszvl.com">
-              <Image src={mail} alt="Mail" width={36} height={36} />
+              <Image src={SVG_LIBRARY.MAIL} alt="Mail" width={36} height={36} />
             </Link>
             <Link href="https://www.linkedin.com/in/jesuszvl/" target="_blank">
-              <Image src={linkedin} alt="LinkedIn" width={36} height={36} />
+              <Image
+                src={SVG_LIBRARY.LINKEDIN}
+                alt="LinkedIn"
+                width={36}
+                height={36}
+              />
             </Link>
             <Link href="https://github.com/jesuszvl" target="_blank">
-              <Image src={github} alt="Github" width={36} height={36} />
+              <Image
+                src={SVG_LIBRARY.GITHUB}
+                alt="Github"
+                width={36}
+                height={36}
+              />
             </Link>
           </div>
         </div>

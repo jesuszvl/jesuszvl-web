@@ -1,18 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import ReactGA from "react-ga4";
-import styles from "./Presentation.module.scss";
+import styles from "./Portfolio.module.scss";
 import vodyet from "./vodyet.jpg";
 import makahco from "./makahco.jpg";
 import SectionContainer from "../SectionContainer/SectionContainer";
+import { trackEvent } from "../../utils/analytics";
 
-export default function Presentation() {
+export default function Portfolio() {
   const trackLinkClick = (projectName) => {
-    ReactGA.initialize("G-K32RW6EE92");
-    ReactGA.event({
-      category: "Project",
-      action: `Clicked ${projectName} project`,
-    });
+    trackEvent("Project", `Clicked ${projectName} project`);
   };
 
   return (
@@ -48,7 +44,7 @@ export default function Presentation() {
             </Link>
             <div className={styles["project-description"]}>
               <h1>Makahco</h1>
-              <p>Music Production Studio Website</p>
+              <p>Creative Studio</p>
             </div>
           </div>
         </div>

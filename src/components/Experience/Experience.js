@@ -1,41 +1,37 @@
 import styles from "./Experience.module.scss";
 
-import ieebc from "./ieebc.svg";
-import timbox from "./timbox.svg";
-import srax from "./srax.svg";
-import iconos from "./iconos.png";
-import gametime from "./gametime.svg";
+import { SVG_LIBRARY } from "../../icons/library";
 import Company from "../Company/Company";
 import SectionContainer from "../SectionContainer/SectionContainer";
 
 const EXPERIENCE = [
   {
     name: "gametime",
-    logo: gametime,
+    logo: SVG_LIBRARY.GT,
     time: "Mar 2022 - Present",
     url: "https://gametime.co/",
   },
   {
     name: "ieebc",
-    logo: ieebc,
+    logo: SVG_LIBRARY.IEEBC,
     time: "Nov 2019 - Mar 2022",
     url: "https://ieebc.mx/",
   },
   {
     name: "timbox",
-    logo: timbox,
+    logo: SVG_LIBRARY.TIMBOX,
     time: "Feb 2018 - Dec 2018",
     url: "https://timbox.com.mx/",
   },
   {
     name: "srax",
-    logo: srax,
+    logo: SVG_LIBRARY.SRAX,
     time: "Oct 2016 - Feb 2018",
     url: "https://srax.mx/",
   },
   {
     name: "iconos",
-    logo: iconos,
+    logo: SVG_LIBRARY.ICONOS,
     time: "Dec 2010 - Sep 2016",
     url: "https://iconos.mx/",
   },

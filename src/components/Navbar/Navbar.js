@@ -1,21 +1,16 @@
 import { useState } from "react";
-import ReactGA from "react-ga4";
 import Link from "next/link";
 import styles from "./Navbar.module.scss";
 import MenuIcon from "../../icons/MenuIcon";
-import { render } from "@testing-library/react";
 import CloseIcon from "../../icons/CloseIcon";
+import { trackEvent } from "../../utils/analytics";
 
 const Navbar = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
   const links = [{ name: "Blog", href: "/blog" }];
 
   const trackLinkClick = (linkName) => {
-    ReactGA.initialize("G-K32RW6EE92");
-    ReactGA.event({
-      category: "Navbar",
-      action: `Clicked ${linkName} link`,
-    });
+    trackEvent("Navbar", `Clicked ${linkName} link`);
   };
 
   const renderDropdownMenu = () => {

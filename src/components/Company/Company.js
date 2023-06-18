@@ -1,17 +1,13 @@
-import ReactGA from "react-ga4";
 import Image from "next/image";
 import styles from "./Company.module.scss";
 import Link from "next/link";
+import { trackEvent } from "../../utils/analytics";
 
 const Company = ({ company }) => {
-  const { name, url, logo, time } = company;
+  const { name, url, logo } = company;
 
   const trackLinkClick = (companyName) => {
-    ReactGA.initialize("G-K32RW6EE92");
-    ReactGA.event({
-      category: "Experience",
-      action: `Clicked ${companyName} company link`,
-    });
+    trackEvent("Experience", `Clicked ${companyName} company link`);
   };
 
   return (

@@ -1,11 +1,6 @@
-import ReactGA from "react-ga4";
-import Head from "next/head";
 import BlogContent from "../src/components/BlogContent/BlogContent";
-import Navbar from "../src/components/Navbar/Navbar";
-import Footer from "../src/components/Footer/Footer";
-
-ReactGA.initialize("G-K32RW6EE92");
-ReactGA.send({ hitType: "pageview", page: "/blog" });
+import { trackPageView } from "../src/utils/analytics";
+import PageContainer from "../src/components/PageContainer/PageContainer";
 
 const messages = [
   "Almost done 😪",
@@ -17,17 +12,13 @@ const messages = [
   "Yes! Well... Who's hungry? 🦖",
 ];
 
+trackPageView("/blog");
+
 export default function Blog({ message }) {
   return (
-    <div className="container">
-      <Head>
-        <title>JESUSZVL | Blog</title>
-        <meta name="description" content="Software Engineer"></meta>
-      </Head>
-      <Navbar />
+    <PageContainer title="Jesus ZVL | Blog">
       <BlogContent message={message} />
-      <Footer />
-    </div>
+    </PageContainer>
   );
 }
 
