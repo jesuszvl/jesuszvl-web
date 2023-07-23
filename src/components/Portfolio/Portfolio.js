@@ -15,7 +15,7 @@ export default function Portfolio() {
   return (
     <SectionContainer isDark>
       <div className={styles["presentation"]}>
-        <h1>My Portfolio</h1>
+        <h1>Portfolio</h1>
         <p>
           Take a look to a few personal projects I&apos;m currently working on.
         </p>
