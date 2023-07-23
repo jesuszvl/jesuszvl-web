@@ -30,7 +30,7 @@ export default function Portfolio() {
             name="Makahco"
             description="Creative Studio"
             image={makahco}
-            href="https://makahco.com"
+            href="https://makahco.mx"
           />
         </div>
       </div>
