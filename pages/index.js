@@ -1,4 +1,4 @@
-import Profile from "../src/components/Profile/Profile";
+import ProfileHero from "../src/components/ProfileHero/ProfileHero";
 import Experience from "../src/components/Experience/Experience";
 import About from "../src/components/About/About";
 import Portfolio from "../src/components/Portfolio/Portfolio";
@@ -10,7 +10,7 @@ trackPageView("/");
 export default function Index() {
   return (
     <PageContainer title="Jesus ZVL | Software Engineer">
-      <Profile />
+      <ProfileHero />
       <About />
       <Portfolio />
       <Experience />

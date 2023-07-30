@@ -4,46 +4,40 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 24px;
+  gap: 72px;
 
   @media (max-width: 560px) {
     flex-direction: column;
+    gap: 24px;
   }
 }
 
 .description {
   display: flex;
   flex-direction: column;
-  max-width: 450px;
-  gap: 16px;
-
-  @media (max-width: 560px) {
-    text-align: center;
-  }
+  text-align: center;
+  align-items: center;
+  gap: 12px;
 }
 
 .photo {
-  border-radius: 30px;
+  border-radius: 125px;
+  border: 1px solid $d-green;
 }
 
 .title {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 48px;
-  color: $main-blue;
-  word-wrap: break-word;
+  color: $main-black;
   line-height: 1;
+  letter-spacing: -0.5px;
 }
 
 .subtitle {
-  font-size: 18px;
+  font-size: 32px;
+  font-weight: 700;
   line-height: 1;
-  padding: 16px 0px;
   margin: 0px;
-  text-justify: inter-character;
-
-  @media (max-width: 560px) {
-    padding: 16px 16px;
-  }
 }
 
 .social {

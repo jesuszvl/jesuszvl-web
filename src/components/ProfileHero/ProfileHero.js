@@ -1,49 +1,39 @@
 import Image from "next/image";
 
-import styles from "./Profile.module.scss";
+import styles from "./ProfileHero.module.scss";
 import { SVG_LIBRARY } from "../../icons/library";
 import Link from "next/link";
 import SectionContainer from "../SectionContainer/SectionContainer";
+import GithubIcon from "../../icons/GithubIcon";
+import LinkedinIcon from "../../icons/LinkedinIcon";
+import MailIcon from "../../icons/MailIcon";
 
-const Profile = () => {
+const ProfileHero = () => {
   return (
-    <SectionContainer isDark>
+    <SectionContainer>
       <div className={styles["profile"]}>
         <div className={styles["description"]}>
-          <span className={styles["title"]}>Software Engineer</span>
-          <p className={styles["subtitle"]}>
-            I like to craft scalable software solutions that deliver exceptional
-            user experiences.
-          </p>
+          <span className={styles["title"]}>Jesús Zavala</span>
+          <p className={styles["subtitle"]}>Software Engineer</p>
         </div>
         <div className={styles["contact-card"]}>
           <Image
             className={styles["photo"]}
             src={SVG_LIBRARY.PROFILE}
             alt="Jesús Zavala"
-            width={250}
-            height={250}
+            width={225}
+            height={225}
             priority
           />
           <div className={styles["contact"]}>
             <Link href="mailto: jesus@jesuszvl.com">
-              <Image src={SVG_LIBRARY.MAIL} alt="Mail" width={36} height={36} />
+              <MailIcon width={36} height={36} />
             </Link>
             <Link href="https://www.linkedin.com/in/jesuszvl/" target="_blank">
-              <Image
-                src={SVG_LIBRARY.LINKEDIN}
-                alt="LinkedIn"
-                width={36}
-                height={36}
-              />
+              <LinkedinIcon width={36} height={36} />
             </Link>
             <Link href="https://github.com/jesuszvl" target="_blank">
-              <Image
-                src={SVG_LIBRARY.GITHUB}
-                alt="Github"
-                width={36}
-                height={36}
-              />
+              <GithubIcon width={36} height={36} />
             </Link>
           </div>
         </div>
@@ -52,4 +42,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default ProfileHero;

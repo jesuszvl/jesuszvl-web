@@ -9,17 +9,13 @@
   display: flex;
   justify-content: center;
   gap: 12px;
-  padding: 12px 0px;
-}
-
-.section-title {
-  text-align: left;
 }
 
 .sections-container {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  justify-content: space-between;
+  width: 100%;
 
   @media (max-width: 560px) {
     flex-direction: column;
@@ -27,8 +23,17 @@
 }
 
 .section-container {
+  flex: 1;
+  background-color: $e-green;
   display: flex;
   flex-direction: column;
-  border-radius: 16px;
-  flex: 1 1 0px;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.section-title {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+  color: $d-green;
 }

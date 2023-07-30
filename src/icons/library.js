@@ -17,9 +17,6 @@ import srax from "./srax.svg";
 import iconos from "./iconos.png";
 import gametime from "./gametime.svg";
 import profile from "./jesuszvl.jpg";
-import mail from "./mail.svg";
-import linkedin from "./linkedin.svg";
-import github from "./github.svg";
 
 export const SVG_LIBRARY = {
   JS: javascript,
@@ -41,7 +38,4 @@ export const SVG_LIBRARY = {
   ICONOS: iconos,
   GT: gametime,
   PROFILE: profile,
-  MAIL: mail,
-  LINKEDIN: linkedin,
-  GITHUB: github,
 };

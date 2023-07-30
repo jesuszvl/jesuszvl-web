@@ -44,15 +44,14 @@ export default function About() {
   const renderAboutSection = ({ title, content, images }) => {
     return (
       <div className={styles["section-container"]} key={title}>
-        <h2 className={styles["section-title"]}>{title}</h2>
-        <p>{content}</p>
+        <span className={styles["section-title"]}>{title}</span>
         <div className={styles["techstack"]}>
           {images.map((image) => {
             return (
               <Image
                 key={image.name}
                 src={image.src}
-                height={48}
+                height={38}
                 alt={image.name}
               />
             );
@@ -65,8 +64,7 @@ export default function About() {
   return (
     <SectionContainer>
       <div className={styles["about"]}>
-        <h1>What I&apos;m good for?</h1>
-
+        <h1 className={styles["about-title"]}>Skills</h1>
         <div className={styles["sections-container"]}>
           {sections.map((section) => {
             return renderAboutSection(section);
