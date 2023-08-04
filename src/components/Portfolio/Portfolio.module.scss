@@ -10,7 +10,7 @@
   flex-direction: row;
   gap: 16px;
 
-  @media (max-width: 560px) {
+  @media (max-width: 1086px) {
     flex-direction: column;
   }
 }

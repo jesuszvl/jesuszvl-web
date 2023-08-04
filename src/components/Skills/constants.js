@@ -15,8 +15,8 @@ export const sections = [
     images: [
       { name: "Node", src: SVG_LIBRARY.NODE },
       { name: "Django", src: SVG_LIBRARY.DJANGO },
-      { name: "Supabase", src: SVG_LIBRARY.SUPABASE },
       { name: "Rails", src: SVG_LIBRARY.RAILS },
+      { name: "Supabase", src: SVG_LIBRARY.SUPABASE },
     ],
   },
   {
@@ -32,7 +32,6 @@ export const sections = [
     title: "Languages",
     images: [
       { name: "JavaScript", src: SVG_LIBRARY.JS },
-      { name: "TypeScript", src: SVG_LIBRARY.TS },
       { name: "Python", src: SVG_LIBRARY.PYTHON },
       { name: "Ruby", src: SVG_LIBRARY.RUBY },
       { name: "PHP", src: SVG_LIBRARY.PHP },
