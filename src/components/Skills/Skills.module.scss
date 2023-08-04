@@ -1,0 +1,47 @@
+@import "../../styles/colors.constants";
+
+.skills {
+  padding: 48px;
+
+  @media (max-width: 560px) {
+    padding: 16px;
+  }
+}
+
+.skills-title {
+  text-align: center;
+}
+
+.techstack {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding-top: 16px;
+}
+
+.sections-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+  @media (max-width: 560px) {
+    flex-direction: column;
+  }
+}
+
+.section-container {
+  flex: 1;
+  background-color: $e-green;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px solid $main-white;
+  padding-bottom: 8px;
+}

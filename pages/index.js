@@ -1,17 +1,17 @@
-import Profile from "../src/components/Profile/Profile";
+import ProfileHero from "../src/components/ProfileHero/ProfileHero";
 import Experience from "../src/components/Experience/Experience";
-import About from "../src/components/About/About";
 import Portfolio from "../src/components/Portfolio/Portfolio";
 import { trackPageView } from "../src/utils/analytics";
 import PageContainer from "../src/components/PageContainer/PageContainer";
+import Skills from "../src/components/Skills/Skills";
 
 trackPageView("/");
 
 export default function Index() {
   return (
-    <PageContainer title="Jesus ZVL | Software Engineer">
-      <Profile />
-      <About />
+    <PageContainer title="Jesús ZVL | Software Engineer">
+      <ProfileHero />
+      <Skills />
       <Portfolio />
       <Experience />
     </PageContainer>

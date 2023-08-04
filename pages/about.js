@@ -13,11 +13,11 @@ const messages = [
   "Yes! Well... Who's hungry? 🦖",
 ];
 
-trackPageView("/blog");
+trackPageView("/about");
 
-export default function Blog({ message }) {
+export default function About({ message }) {
   return (
-    <PageContainer title="Jesús ZVL | Blog">
+    <PageContainer title="Jesús ZVL | About">
       <BlogContent message={message} />
     </PageContainer>
   );
