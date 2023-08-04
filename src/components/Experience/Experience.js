@@ -44,7 +44,7 @@ const Experience = () => {
         <h1>Experience</h1>
         <p>
           Here&apos;s a quick summary of places I contributed delivering high
-          quality code. Click on each company to read about my time there.
+          quality code.
         </p>
         <div className={styles["experience-list"]}>
           {EXPERIENCE.map((company) => {
