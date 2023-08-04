@@ -42,10 +42,6 @@ const Experience = () => {
     <SectionContainer isDark>
       <div className={styles["experience"]}>
         <h1>Experience</h1>
-        <p>
-          Here&apos;s a quick summary of places I contributed delivering high
-          quality code.
-        </p>
         <div className={styles["experience-list"]}>
           {EXPERIENCE.map((company) => {
             return <Company key={company.name} company={company} />;
