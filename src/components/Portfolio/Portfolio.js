@@ -3,7 +3,6 @@ import vodyet from "./vodyet.jpg";
 import makahco from "./makahco.jpg";
 import openprep from "./openprep.jpg";
 import SectionContainer from "../SectionContainer/SectionContainer";
-import { trackEvent } from "../../utils/analytics";
 import Project from "./Project";
 
 export default function Portfolio() {

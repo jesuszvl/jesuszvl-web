@@ -26,13 +26,24 @@ const ProfileHero = () => {
             priority
           />
           <div className={styles["contact"]}>
-            <Link href="mailto: jesus@jesuszvl.com">
+            <Link
+              href="mailto: jesus@jesuszvl.com"
+              className={styles["contact-link"]}
+            >
               <MailIcon width={36} height={36} />
             </Link>
-            <Link href="https://www.linkedin.com/in/jesuszvl/" target="_blank">
+            <Link
+              href="https://www.linkedin.com/in/jesuszvl/"
+              target="_blank"
+              className={styles["contact-link"]}
+            >
               <LinkedinIcon width={36} height={36} />
             </Link>
-            <Link href="https://github.com/jesuszvl" target="_blank">
+            <Link
+              href="https://github.com/jesuszvl"
+              target="_blank"
+              className={styles["contact-link"]}
+            >
               <GithubIcon width={36} height={36} />
             </Link>
           </div>

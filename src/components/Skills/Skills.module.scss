@@ -1,21 +1,28 @@
 @import "../../styles/colors.constants";
 
-.about {
+.skills {
+  padding: 48px;
+
+  @media (max-width: 560px) {
+    padding: 16px;
+  }
+}
+
+.skills-title {
   text-align: center;
-  width: 100%;
 }
 
 .techstack {
   display: flex;
   justify-content: center;
   gap: 12px;
+  padding-top: 16px;
 }
 
 .sections-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
+  gap: 16px;
 
   @media (max-width: 560px) {
     flex-direction: column;
@@ -32,8 +39,9 @@
 }
 
 .section-title {
-  text-align: left;
   font-size: 24px;
   font-weight: 700;
-  color: $d-green;
+  text-align: center;
+  border-bottom: 1px solid $main-white;
+  padding-bottom: 8px;
 }

@@ -16,6 +16,11 @@ import timbox from "./timbox.svg";
 import srax from "./srax.svg";
 import iconos from "./iconos.png";
 import gametime from "./gametime.svg";
+import sketch from "./sketch.svg";
+import mysql from "./mysql.svg";
+import postgres from "./postgres.svg";
+import mongo from "./mongo.svg";
+import supabase from "./supabase.svg";
 import profile from "./jesuszvl.jpg";
 
 export const SVG_LIBRARY = {
@@ -27,6 +32,7 @@ export const SVG_LIBRARY = {
   DJANGO: django,
   CSS: css,
   FIGMA: figma,
+  SKETCH: sketch,
   PS: photoshop,
   NEXT: next,
   RUBY: ruby,
@@ -38,4 +44,8 @@ export const SVG_LIBRARY = {
   ICONOS: iconos,
   GT: gametime,
   PROFILE: profile,
+  MYSQL: mysql,
+  POSTGRES: postgres,
+  SUPABASE: supabase,
+  MONGO: mongo,
 };
