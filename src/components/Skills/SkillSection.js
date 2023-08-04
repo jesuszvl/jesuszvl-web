@@ -9,12 +9,14 @@ const SkillSection = ({ title, images }) => {
       <div className={styles["techstack"]}>
         {images.map((image) => {
           return (
-            <Image
-              key={image.name}
-              src={image.src}
-              height={32}
-              alt={image.name}
-            />
+            <div key={image.name} className={styles["techstack-skill"]}>
+              <Image
+                src={image.src}
+                height={32}
+                alt={image.name}
+                title={image.name}
+              />
+            </div>
           );
         })}
       </div>

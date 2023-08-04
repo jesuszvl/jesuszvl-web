@@ -4,10 +4,10 @@ export const sections = [
   {
     title: "Frontend",
     images: [
+      { name: "HTML", src: SVG_LIBRARY.HTML },
+      { name: "CSS", src: SVG_LIBRARY.CSS },
       { name: "React", src: SVG_LIBRARY.REACT },
       { name: "Next", src: SVG_LIBRARY.NEXT },
-      { name: "JavaScript", src: SVG_LIBRARY.JS },
-      { name: "TypeScript", src: SVG_LIBRARY.TS },
     ],
   },
   {
@@ -16,8 +16,7 @@ export const sections = [
       { name: "Node", src: SVG_LIBRARY.NODE },
       { name: "Django", src: SVG_LIBRARY.DJANGO },
       { name: "Supabase", src: SVG_LIBRARY.SUPABASE },
-      { name: "Ruby", src: SVG_LIBRARY.RUBY },
-      { name: "PHP", src: SVG_LIBRARY.PHP },
+      { name: "Rails", src: SVG_LIBRARY.RAILS },
     ],
   },
   {
@@ -26,15 +25,17 @@ export const sections = [
       { name: "Postgres", src: SVG_LIBRARY.POSTGRES },
       { name: "Mongo", src: SVG_LIBRARY.MONGO },
       { name: "MySQL", src: SVG_LIBRARY.MYSQL },
+      { name: "SQLServer", src: SVG_LIBRARY.SQLSERVER },
     ],
   },
   {
-    title: "Design",
+    title: "Languages",
     images: [
-      { name: "CSS", src: SVG_LIBRARY.CSS },
-      { name: "Photoshop", src: SVG_LIBRARY.PS },
-      { name: "Sketch", src: SVG_LIBRARY.SKETCH },
-      { name: "Figma", src: SVG_LIBRARY.FIGMA },
+      { name: "JavaScript", src: SVG_LIBRARY.JS },
+      { name: "TypeScript", src: SVG_LIBRARY.TS },
+      { name: "Python", src: SVG_LIBRARY.PYTHON },
+      { name: "Ruby", src: SVG_LIBRARY.RUBY },
+      { name: "PHP", src: SVG_LIBRARY.PHP },
     ],
   },
 ];

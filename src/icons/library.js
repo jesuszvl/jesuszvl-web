@@ -22,6 +22,9 @@ import postgres from "./postgres.svg";
 import mongo from "./mongo.svg";
 import supabase from "./supabase.svg";
 import profile from "./jesuszvl.jpg";
+import html from "./html.svg";
+import rails from "./rails.svg";
+import sqlserver from "./sqlserver.svg";
 
 export const SVG_LIBRARY = {
   JS: javascript,
@@ -48,4 +51,7 @@ export const SVG_LIBRARY = {
   POSTGRES: postgres,
   SUPABASE: supabase,
   MONGO: mongo,
+  HTML: html,
+  RAILS: rails,
+  SQLSERVER: sqlserver,
 };
