@@ -21,13 +21,13 @@ export default function Portfolio() {
             name="Makahco"
             description="Creative Studio"
             image={makahco}
-            href="https://makahco.mx"
+            href="https://makah.co"
           />
           <Project
             name="OpenPREP"
             description="Web Standard for Preliminar Electoral Results"
             image={openprep}
-            href="https://openprep.mx"
+            href="https://open-prep-api.vercel.app"
           />
         </div>
       </div>
