@@ -27,7 +27,7 @@ export default function Portfolio() {
             name="PREP Libre"
             description="Web Standard for Preliminar Electoral Results"
             image={openprep}
-            href="http://preplibre.com"
+            href="https://preplibre.com"
           />
         </div>
       </div>
