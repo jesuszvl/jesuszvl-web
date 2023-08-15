@@ -24,10 +24,10 @@ export default function Portfolio() {
             href="https://makah.co"
           />
           <Project
-            name="OpenPREP"
+            name="PREP Libre"
             description="Web Standard for Preliminar Electoral Results"
             image={openprep}
-            href="https://open-prep-api.vercel.app"
+            href="http://preplibre.com"
           />
         </div>
       </div>
