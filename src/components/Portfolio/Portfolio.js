@@ -12,19 +12,19 @@ export default function Portfolio() {
         <h1>Portfolio</h1>
         <div className={styles["projects"]}>
           <Project
-            name="Vodyet"
-            description="Personal Budget Tool"
-            image={vodyet}
-            href="https://www.vodyet.com"
-          />
-          <Project
-            name="Makahco"
+            name="MAKAHCO"
             description="Creative Studio"
             image={makahco}
             href="https://makah.co"
           />
           <Project
-            name="PREP Libre"
+            name="VODYET"
+            description="Personal Budget Tool"
+            image={vodyet}
+            href="https://www.vodyet.com"
+          />
+          <Project
+            name="PREP LIBRE"
             description="Web Standard for Preliminar Electoral Results"
             image={preplibre}
             href="https://preplibre.com"
