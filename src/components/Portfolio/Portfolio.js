@@ -1,7 +1,7 @@
 import styles from "./Portfolio.module.scss";
 import vodyet from "./vodyet.jpg";
 import makahco from "./makahco.jpg";
-import openprep from "./openprep.jpg";
+import preplibre from "./preplibre.jpg";
 import SectionContainer from "../SectionContainer/SectionContainer";
 import Project from "./Project";
 
@@ -26,7 +26,7 @@ export default function Portfolio() {
           <Project
             name="PREP Libre"
             description="Web Standard for Preliminar Electoral Results"
-            image={openprep}
+            image={preplibre}
             href="https://preplibre.com"
           />
         </div>
