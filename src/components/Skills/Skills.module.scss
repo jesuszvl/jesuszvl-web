@@ -26,13 +26,23 @@
   gap: 6px;
 }
 
+.skill-name {
+  @media (max-width: 375px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
+}
+
 .sections-container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 
-  @media (max-width: 986px) {
-    flex-direction: column;
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

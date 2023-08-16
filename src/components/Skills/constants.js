@@ -2,6 +2,15 @@ import { SVG_LIBRARY } from "../../icons/library";
 
 export const sections = [
   {
+    title: "Languages",
+    images: [
+      { name: "JavaScript", src: SVG_LIBRARY.JS },
+      { name: "Python", src: SVG_LIBRARY.PYTHON },
+      { name: "Ruby", src: SVG_LIBRARY.RUBY },
+      { name: "PHP", src: SVG_LIBRARY.PHP },
+    ],
+  },
+  {
     title: "Frontend",
     images: [
       { name: "HTML", src: SVG_LIBRARY.HTML },
@@ -26,15 +35,6 @@ export const sections = [
       { name: "Mongo", src: SVG_LIBRARY.MONGO },
       { name: "MySQL", src: SVG_LIBRARY.MYSQL },
       { name: "SQLServer", src: SVG_LIBRARY.SQLSERVER },
-    ],
-  },
-  {
-    title: "Languages",
-    images: [
-      { name: "JavaScript", src: SVG_LIBRARY.JS },
-      { name: "Python", src: SVG_LIBRARY.PYTHON },
-      { name: "Ruby", src: SVG_LIBRARY.RUBY },
-      { name: "PHP", src: SVG_LIBRARY.PHP },
     ],
   },
 ];

@@ -7,10 +7,7 @@ import { trackEvent } from "../../utils/analytics";
 
 const Navbar = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
-  const links = [
-    { name: "About", href: "/about" },
-    { name: "Blog", href: "/blog" },
-  ];
+  const links = [{ name: "About", href: "/about" }];
 
   const trackLinkClick = (linkName) => {
     trackEvent("Navbar", `Clicked ${linkName} link`);

@@ -16,6 +16,7 @@ const SkillSection = ({ title, images }) => {
                 alt={image.name}
                 title={image.name}
               />
+              <span className={styles["skill-name"]}>{image.name}</span>
             </div>
           );
         })}
