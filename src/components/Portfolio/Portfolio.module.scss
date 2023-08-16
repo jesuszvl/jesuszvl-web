@@ -6,28 +6,35 @@
 }
 
 .projects {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
 
-  @media (max-width: 1086px) {
-    flex-direction: column;
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 .project {
   display: flex;
-  max-height: 240px;
-  max-width: 420px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   cursor: pointer;
   aspect-ratio: 16/9;
-  position: relative;
-  width: 340px;
+  width: 100%;
 
-  @media (max-width: 560px) {
-    width: 100%;
+  @media (max-width: 800px) {
+    &:last-child:nth-child(2n - 1) {
+      grid-column: span 1;
+    }
+  }
+
+  @media (min-width: 800px) {
+    justify-self: center;
+    &:last-child:nth-child(2n - 1) {
+      width: calc(100% / 2);
+      grid-column: span 2;
+    }
   }
 }
 
