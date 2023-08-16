@@ -9,8 +9,9 @@ const messages = [
   "I swear it worked on my computer 😅",
   "Looks like the gremlins got into the code again 😨",
   "It'll be home for Christmas 🎁",
-  "This is not the blog you looking for ✨",
+  "This is not the site you looking for ✨",
   "Yes! Well... Who's hungry? 🦖",
+  "I guess you guys aren’t ready for that yet, but your kids are gonna love it 🎸",
 ];
 
 trackPageView("/about");
