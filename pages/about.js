@@ -1,6 +1,5 @@
 import { random } from "lodash";
 import BlogContent from "../src/components/BlogContent/BlogContent";
-import { trackPageView } from "../src/utils/analytics";
 import PageContainer from "../src/components/PageContainer/PageContainer";
 
 const messages = [
@@ -13,8 +12,6 @@ const messages = [
   "Yes! Well... Who's hungry? 🦖",
   "I guess you guys aren’t ready for that yet, but your kids are gonna love it 🎸",
 ];
-
-trackPageView("/about");
 
 export default function About({ message }) {
   return (

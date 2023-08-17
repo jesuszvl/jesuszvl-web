@@ -3,15 +3,10 @@ import Link from "next/link";
 import styles from "./Navbar.module.scss";
 import MenuIcon from "../../icons/MenuIcon";
 import CloseIcon from "../../icons/CloseIcon";
-import { trackEvent } from "../../utils/analytics";
 
 const Navbar = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
   const links = [{ name: "About", href: "/about" }];
-
-  const trackLinkClick = (linkName) => {
-    trackEvent("Navbar", `Clicked ${linkName} link`);
-  };
 
   const renderDropdownMenu = () => {
     return (
