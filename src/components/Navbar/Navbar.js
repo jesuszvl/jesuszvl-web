@@ -17,7 +17,6 @@ const Navbar = () => {
             href={link.href}
             className={styles["dropdown-menu-link"]}
             onClick={() => {
-              trackLinkClick(link.name);
               setIsMenuActive(!isMenuActive);
             }}
           >
@@ -39,12 +38,7 @@ const Navbar = () => {
 
         <div className={styles.menu}>
           {links.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className={styles.link}
-              onClick={() => trackLinkClick(link.name)}
-            >
+            <Link key={link.name} href={link.href} className={styles.link}>
               {link.name}
             </Link>
           ))}
@@ -52,7 +46,6 @@ const Navbar = () => {
         <div
           className={styles["menu-icon"]}
           onClick={() => {
-            trackLinkClick("Menu");
             setIsMenuActive(!isMenuActive);
           }}
         >

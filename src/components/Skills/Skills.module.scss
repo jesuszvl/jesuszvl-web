@@ -10,6 +10,7 @@
 
 .skills-title {
   text-align: center;
+  color: $c-green;
 }
 
 .techstack {
@@ -48,7 +49,7 @@
 
 .section-container {
   flex: 1;
-  background-color: $e-green;
+  background-color: $c-dark;
   display: flex;
   flex-direction: column;
   border-radius: 12px;
