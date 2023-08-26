@@ -4,4 +4,4 @@ This project was created with React as an interactive portfolio for a software e
 
 ## Demo
 
-[jesuszvl.com](https://jesuszvl.com/)
+[zvl.dev](https://zvl.dev/)
