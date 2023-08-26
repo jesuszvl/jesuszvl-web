@@ -27,7 +27,7 @@ const ProfileHero = () => {
           />
           <div className={styles["contact"]}>
             <Link
-              href="mailto: jesus@jesuszvl.com"
+              href="mailto: jesus@zvl.dev"
               className={styles["contact-link"]}
             >
               <MailIcon width={36} height={36} />
