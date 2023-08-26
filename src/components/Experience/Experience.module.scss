@@ -1,18 +1,13 @@
 @import "../../styles/colors.constants";
 
 .experience {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: $c-green;
-
-  padding: 48px;
-
-  @media (max-width: 560px) {
-    padding: 16px;
-  }
 }
 
 .experience-list {

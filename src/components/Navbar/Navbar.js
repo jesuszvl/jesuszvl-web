@@ -6,7 +6,10 @@ import CloseIcon from "../../icons/CloseIcon";
 
 const Navbar = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
-  const links = [{ name: "About", href: "/about" }];
+  const links = [
+    { name: "About", href: "/about" },
+    { name: "Blog", href: "/blog" },
+  ];
 
   const renderDropdownMenu = () => {
     return (
@@ -32,8 +35,8 @@ const Navbar = () => {
       <div className={styles.navbar}>
         <Link href="/">
           <span className={styles.company}>
-            <span className={styles.sign}>zvl</span>.
-            <span className={styles.sign}>dev</span>
+            zvl
+            <span className={styles.sign}>.</span>dev
           </span>
         </Link>
 

@@ -6,10 +6,10 @@ import Skills from "../src/components/Skills/Skills";
 
 export default function Index() {
   return (
-    <PageContainer title="Jesús ZVL | Software Engineer">
+    <PageContainer title="Jesús Zavala | Home">
       <ProfileHero />
-      <Skills />
       <Portfolio />
+      <Skills />
       <Experience />
     </PageContainer>
   );

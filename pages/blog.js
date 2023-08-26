@@ -13,9 +13,9 @@ const messages = [
   "I guess you guys aren’t ready for that yet, but your kids are gonna love it 🎸",
 ];
 
-export default function About({ message }) {
+export default function Blog({ message }) {
   return (
-    <PageContainer title="Jesús Zavala | About">
+    <PageContainer title="Jesús Zavala | Blog">
       <BlogContent message={message} />
     </PageContainer>
   );

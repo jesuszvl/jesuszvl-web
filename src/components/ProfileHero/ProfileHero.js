@@ -12,10 +12,6 @@ const ProfileHero = () => {
   return (
     <SectionContainer>
       <div className={styles["profile"]}>
-        <div className={styles["description"]}>
-          <span className={styles["title"]}>Jesús Zavala</span>
-          <p className={styles["subtitle"]}>Software Engineer</p>
-        </div>
         <div className={styles["contact-card"]}>
           <Image
             className={styles["photo"]}
@@ -25,28 +21,29 @@ const ProfileHero = () => {
             height={225}
             priority
           />
-          <div className={styles["contact"]}>
-            <Link
-              href="mailto: jesus@zvl.dev"
-              className={styles["contact-link"]}
-            >
-              <MailIcon width={36} height={36} />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/jesuszvl/"
-              target="_blank"
-              className={styles["contact-link"]}
-            >
-              <LinkedinIcon width={36} height={36} />
-            </Link>
-            <Link
-              href="https://github.com/jesuszvl"
-              target="_blank"
-              className={styles["contact-link"]}
-            >
-              <GithubIcon width={36} height={36} />
-            </Link>
-          </div>
+        </div>
+        <div className={styles["description"]}>
+          <span className={styles["title"]}>Jesús Zavala</span>
+          <p className={styles["subtitle"]}>Software Engineer</p>
+        </div>
+        <div className={styles["contact"]}>
+          <Link href="mailto: jesus@zvl.dev" className={styles["contact-link"]}>
+            <MailIcon width={32} height={32} />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/jesuszvl/"
+            target="_blank"
+            className={styles["contact-link"]}
+          >
+            <LinkedinIcon width={32} height={32} />
+          </Link>
+          <Link
+            href="https://github.com/jesuszvl"
+            target="_blank"
+            className={styles["contact-link"]}
+          >
+            <GithubIcon width={32} height={32} />
+          </Link>
         </div>
       </div>
     </SectionContainer>

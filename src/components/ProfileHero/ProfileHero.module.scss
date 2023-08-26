@@ -2,14 +2,10 @@
 
 .profile {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  gap: 72px;
-
-  @media (max-width: 560px) {
-    flex-direction: column;
-    gap: 24px;
-  }
+  gap: 32px;
+  padding: 32px 0;
 }
 
 .description {
@@ -17,12 +13,7 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  gap: 12px;
-}
-
-.photo {
-  border-radius: 125px;
-  border: 1px solid $d-green;
+  gap: 8px;
 }
 
 .title {
@@ -70,14 +61,20 @@
 
 .contact {
   display: flex;
-  justify-content: center;
-  gap: 32px;
+  justify-content: space-evenly;
+  gap: 46px;
 }
 
 .contact-link svg {
-  fill: $main-white;
+  fill: $c-purple;
 }
 
 .contact-link svg:hover {
   fill: $c-green;
+}
+
+.photo {
+  border-radius: 125px;
+  border: 2px solid $c-green;
+  gap: 8px;
 }

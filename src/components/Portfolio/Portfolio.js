@@ -7,9 +7,8 @@ import Project from "./Project";
 
 export default function Portfolio() {
   return (
-    <SectionContainer>
+    <SectionContainer title={"Current Projects"}>
       <div className={styles["presentation"]}>
-        <h1>Portfolio</h1>
         <div className={styles["projects"]}>
           <Project
             name="MAKAHCO"

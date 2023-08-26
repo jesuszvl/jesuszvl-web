@@ -12,7 +12,7 @@ const SkillSection = ({ title, images }) => {
             <div key={image.name} className={styles["techstack-skill"]}>
               <Image
                 src={image.src}
-                height={32}
+                height={28}
                 alt={image.name}
                 title={image.name}
               />

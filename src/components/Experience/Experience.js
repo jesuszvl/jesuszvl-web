@@ -39,14 +39,15 @@ const EXPERIENCE = [
 
 const Experience = () => {
   return (
-    <div className={styles["experience"]}>
-      <h1>Experience</h1>
-      <div className={styles["experience-list"]}>
-        {EXPERIENCE.map((company) => {
-          return <Company key={company.name} company={company} />;
-        })}
+    <SectionContainer title={"Work Experience"}>
+      <div className={styles["experience"]}>
+        <div className={styles["experience-list"]}>
+          {EXPERIENCE.map((company) => {
+            return <Company key={company.name} company={company} />;
+          })}
+        </div>
       </div>
-    </div>
+    </SectionContainer>
   );
 };
 

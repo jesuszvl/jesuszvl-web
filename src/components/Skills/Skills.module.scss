@@ -1,16 +1,12 @@
 @import "../../styles/colors.constants";
 
 .skills {
-  padding: 48px;
-
-  @media (max-width: 560px) {
-    padding: 16px;
-  }
+  width: 100%;
 }
 
 .skills-title {
   text-align: center;
-  color: $c-green;
+  line-height: 0.5px;
 }
 
 .techstack {
@@ -29,7 +25,7 @@
 
 .skill-name {
   @media (max-width: 375px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   @media (max-width: 320px) {
@@ -57,9 +53,9 @@
 }
 
 .section-title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   text-align: center;
-  border-bottom: 1px solid $main-white;
+  border-bottom: 2px solid $c-green;
   padding-bottom: 8px;
 }
