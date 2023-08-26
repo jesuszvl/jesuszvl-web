@@ -7,7 +7,7 @@ const Footer = () => {
         <p className={styles["footer-content"]}>
           developed by{" "}
           <a href="https://jesuszvl.com" className={styles["footer-link"]}>
-            jesuszvl ®
+            zvl.dev ®
           </a>
         </p>
       </div>

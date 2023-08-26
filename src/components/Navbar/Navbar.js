@@ -32,7 +32,8 @@ const Navbar = () => {
       <div className={styles.navbar}>
         <Link href="/">
           <span className={styles.company}>
-            JESUS<span className={styles.sign}>ZVL</span>
+            <span className={styles.sign}>zvl</span>.
+            <span className={styles.sign}>dev</span>
           </span>
         </Link>
 
