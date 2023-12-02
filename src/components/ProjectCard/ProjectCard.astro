@@ -1,0 +1,28 @@
+---
+import { Image } from 'astro:assets'
+import styles from './ProjectCard.module.scss'
+import ExternalIcon from '../../icons/ExternalIcon.astro'
+
+interface Props {
+  title: string
+  description: string
+  image: any
+  url: string
+}
+
+const { title, description, image, url } = Astro.props
+---
+
+<div class={styles.project}>
+  <Image class={styles.image} src={image} alt={title} />
+  <div class={styles.content}>
+    <a class={styles.title} target='_blank' href={url} rel='noreferrer'>
+      {title}
+      <ExternalIcon />
+    </a>
+    <span>{description}</span>
+    <div class={styles.stack}>
+      <slot name='stack' />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+---
+import { Image } from 'astro:assets'
+import styles from './Company.module.scss'
+
+interface Props {
+  name: string
+  logo: any
+  time: string
+  url: string
+}
+
+const { name, logo, time, url } = Astro.props
+---
+
+<a class={styles.company} target='_blank' href={url} rel='noreferrer'>
+  <Image src={logo} alt={name} height={32} />
+</a>

@@ -1,5 +1,3 @@
-@import "../../styles/colors.constants";
-
 .experience {
   width: 100%;
   display: flex;
@@ -7,19 +5,14 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: $c-green;
+  padding: 64px 0;
 }
 
-.experience-list {
+.companies {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
   padding-top: 16px;
   width: 100%;
-}
-
-.subtitle {
-  text-align: justify;
-  text-justify: inter-word;
 }
