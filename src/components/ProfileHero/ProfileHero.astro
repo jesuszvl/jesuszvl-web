@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets'
+import { Picture } from 'astro:assets'
 import profileImage from '../../images/profile.jpg'
 import styles from './ProfileHero.module.scss'
 import MailIcon from '../../icons/MailIcon.astro'
@@ -8,7 +8,7 @@ import GithubIcon from '../../icons/GithubIcon.astro'
 ---
 
 <div class={styles.hero}>
-  <Image
+  <Picture
     src={profileImage}
     alt='Profile Image'
     width={225}
