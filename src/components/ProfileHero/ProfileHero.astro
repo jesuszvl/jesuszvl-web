@@ -7,7 +7,7 @@ import LinkedInIcon from '../../icons/LinkedInIcon.astro'
 import GithubIcon from '../../icons/GithubIcon.astro'
 ---
 
-<div class={styles.hero}>
+<section class={styles.hero}>
   <Picture
     src={profileImage}
     alt='Profile Image'
@@ -16,11 +16,11 @@ import GithubIcon from '../../icons/GithubIcon.astro'
     class={styles.profile}
     loading='eager'
   />
-  <div class={styles.description}>
+  <header class={styles.description}>
     <span class={styles.name}>Jesús Zavala</span>
     <p class={styles.title}>Software Engineer</p>
-  </div>
-  <div class={styles.social}>
+  </header>
+  <footer class={styles.social}>
     <a href='mailto: jesus@zvl.dev' aria-label='Send me an email'>
       <MailIcon />
     </a>
@@ -38,5 +38,5 @@ import GithubIcon from '../../icons/GithubIcon.astro'
     >
       <GithubIcon />
     </a>
-  </div>
-</div>
+  </footer>
+</section>

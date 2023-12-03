@@ -42,13 +42,13 @@ const EXPERIENCE = [
 ]
 ---
 
-<div class={styles.experience}>
+<section class={styles.experience}>
   <h1>Work Experience</h1>
-  <div class={styles.companies}>
+  <nav class={styles.companies}>
     {
       EXPERIENCE.map((company) => {
         return <Company {...company} />
       })
     }
-  </div>
-</div>
+  </nav>
+</section>

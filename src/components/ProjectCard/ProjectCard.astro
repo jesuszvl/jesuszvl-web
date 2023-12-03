@@ -13,16 +13,16 @@ interface Props {
 const { title, description, image, url } = Astro.props
 ---
 
-<div class={styles.project}>
+<article class={styles.project}>
   <Image class={styles.image} src={image} alt={title} />
-  <div class={styles.content}>
+  <section class={styles.content}>
     <a class={styles.title} target='_blank' href={url} rel='noreferrer'>
       {title}
       <ExternalIcon />
     </a>
-    <span>{description}</span>
-    <div class={styles.stack}>
+    <p>{description}</p>
+    <footer class={styles.stack}>
       <slot name='stack' />
-    </div>
-  </div>
-</div>
+    </footer>
+  </section>
+</article>
