@@ -1,17 +1,15 @@
-@import "../../styles/colors.constants";
-
 .company {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: black;
   flex: 0 0 calc(16.66% - 18px);
-  padding: 6px 6px;
+  padding: 12px 6px;
   border-radius: 12px;
 
   cursor: pointer;
 
   &:hover {
-    background-color: $c-purple;
+    background-color: gray;
   }
 }

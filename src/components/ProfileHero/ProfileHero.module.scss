@@ -1,11 +1,15 @@
-@import "../../styles/colors.constants";
-
-.profile {
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  padding: 32px 0;
+  padding: 64px 0;
+}
+
+.profile {
+  border-radius: 50%;
+  border: 2px solid #2f9085;
+  gap: 8px;
 }
 
 .description {
@@ -16,10 +20,10 @@
   gap: 8px;
 }
 
-.title {
+.name {
   font-weight: 800;
   font-size: 48px;
-  color: $c-green;
+  color: #2f9085;
   line-height: 1;
   letter-spacing: -0.5px;
   @media (min-width: 800px) {
@@ -27,7 +31,7 @@
   }
 }
 
-.subtitle {
+.title {
   font-size: 32px;
   font-weight: 700;
   line-height: 1;
@@ -39,42 +43,14 @@
 
 .social {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4vw;
-}
-
-.icon {
-  font-size: 30px;
-  color: #424549;
-}
-
-.icon:hover {
-  color: $main-white;
-}
-
-.contact-card {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.contact {
-  display: flex;
   justify-content: space-evenly;
   gap: 46px;
-}
 
-.contact-link svg {
-  fill: $e-dark;
-}
+  a svg {
+    stroke: gray;
+  }
 
-.contact-link svg:hover {
-  fill: $c-purple;
-}
-
-.photo {
-  border-radius: 125px;
-  border: 2px solid $c-green;
-  gap: 8px;
+  a svg:hover {
+    stroke: white;
+  }
 }
