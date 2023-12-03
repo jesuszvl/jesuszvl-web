@@ -1,6 +1,6 @@
-# Portfolio Project
+# ZVL.DEV
 
-This project was created with React as an interactive portfolio for a software engineer
+This was developed with Astro as a portfolio page for my software engineer projects
 
 # Demo
 
