@@ -1,5 +1,5 @@
 ---
-import ProjectCard from '../ProjectCard/ProjectCard.astro'
+import ProjectCard from '../ProjectCard/ProjectCard.tsx'
 import styles from './Portfolio.module.scss'
 import makahcoImage from '../../images/portfolio/makahco.jpg'
 import vodyetImage from '../../images/portfolio/vodyet.jpg'
@@ -19,7 +19,7 @@ import NodeIcon from '../../icons/NodeIcon.astro'
 
 const projects = [
   {
-    title: 'makahco',
+    title: 'MAKAHCO',
     description: 'Rap & freestyle tools',
     url: 'https://makah.co',
     image: makahcoImage,
@@ -33,15 +33,14 @@ const projects = [
     stack: [ReactIcon, TypescriptIcon, NextIcon, SupabaseIcon]
   },
   {
-    title: 'PREP Libre',
-    description:
-      'Open Platform for Electoral Preliminary Result Systems in México',
+    title: 'PREP LIBRE',
+    description: 'Open Platform for Electoral Preliminary Results',
     url: 'https://preplibre.com',
     image: prepLibreImage,
     stack: [MongoIcon, ExpressIcon, ReactIcon, NodeIcon, TypescriptIcon]
   },
   {
-    title: 'VS My Playlist',
+    title: 'VS MY PLAYLIST',
     description: 'Spotify Playlist Organizer',
     url: 'https://jesuszvl.github.io/vs-my-playlist',
     image: playlistImage,
@@ -61,6 +60,7 @@ const projects = [
       {
         projects.map((project) => (
           <ProjectCard
+            client:load
             title={project.title}
             description={project.description}
             url={project.url}

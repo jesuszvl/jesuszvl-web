@@ -5,25 +5,27 @@
   max-width: 560px;
   border-radius: 12px;
   overflow: hidden;
-  background-color: #ffe766;
+  background-color: #fcd926;
   color: black;
+  cursor: pointer;
 }
 
 .title {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 32px;
+  font-size: 16px;
   font-weight: 700;
-  width: fit-content;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+}
+
+.description {
+  font-size: 34px;
+  font-weight: 700;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   padding: 16px;
-  gap: 16px;
 }
 
 .image {
