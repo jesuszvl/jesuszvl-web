@@ -43,12 +43,14 @@ const EXPERIENCE = [
 ---
 
 <section class={styles.experience}>
-  <h1>Work Experience</h1>
-  <nav class={styles.companies}>
-    {
-      EXPERIENCE.map((company) => {
-        return <Company {...company} />
-      })
-    }
-  </nav>
+  <div class={styles.content}>
+    <h1>Work Experience</h1>
+    <nav class={styles.companies}>
+      {
+        EXPERIENCE.map((company) => {
+          return <Company {...company} />
+        })
+      }
+    </nav>
+  </div>
 </section>

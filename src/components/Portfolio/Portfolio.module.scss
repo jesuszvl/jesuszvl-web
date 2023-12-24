@@ -2,8 +2,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px;
   gap: 12px;
+  width: 100%;
+  padding: 48px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: 640px) {
+    max-width: 640px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1024px;
+  }
+
+  @media (min-width: 1172px) {
+    max-width: 1172px;
+  }
 }
 
 .projects {
@@ -12,16 +36,17 @@
   align-items: center;
   gap: 24px;
   width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-@media (min-width: 1000px) {
-  .portfolio {
-    padding: 64px;
-  }
+.title {
+  font-size: 42px;
+  line-height: 0;
+  color: white;
+}
 
-  .projects {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.subtitle {
+  font-size: 24px;
+  margin-bottom: 42px;
 }

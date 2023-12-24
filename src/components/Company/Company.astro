@@ -12,6 +12,6 @@ interface Props {
 const { name, logo, time, url } = Astro.props
 ---
 
-<a class={styles.company} target='_blank' href={url} rel='noreferrer'>
+<span class={styles.company}>
   <Image src={logo} alt={name} height={32} />
-</a>
+</span>

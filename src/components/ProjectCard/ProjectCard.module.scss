@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 600px;
-  border: 2px solid gray;
+  max-width: 560px;
   border-radius: 12px;
   overflow: hidden;
+  background-color: #ffe766;
+  color: black;
 }
 
 .title {

@@ -3,7 +3,16 @@ import styles from './Header.module.scss'
 ---
 
 <header class={styles.header}>
-  <span class={styles.company}>
-    zvl<span class={styles.sign}>.</span>dev
-  </span>
+  <div class={styles.content}>
+    <a href='/' class={styles.company}>
+      zvl<span class={styles.sign}>.</span>dev
+    </a>
+    <nav class={styles.navigation}>
+      <ul class={styles.menu}>
+        <li><a class={styles.link} href='/#projects'>Projects</a></li>
+        <li><a class={styles.link} href='/#skills'>Skills</a></li>
+        <li><a class={styles.link} href='/#experience'>Experience</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>

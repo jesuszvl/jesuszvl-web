@@ -8,35 +8,41 @@ import GithubIcon from '../../icons/GithubIcon.astro'
 ---
 
 <section class={styles.hero}>
-  <Picture
-    src={profileImage}
-    alt='Profile Image'
-    width={225}
-    height={225}
-    class={styles.profile}
-    loading='eager'
-  />
-  <header class={styles.description}>
-    <span class={styles.name}>Jesús Zavala</span>
-    <p class={styles.title}>Software Engineer</p>
-  </header>
-  <footer class={styles.social}>
-    <a href='mailto: jesus@zvl.dev' aria-label='Send me an email'>
-      <MailIcon />
-    </a>
-    <a
-      href='https://www.linkedin.com/in/jesuszvl/'
-      target='_blank'
-      aria-label='Contact me at LinkedIn'
-    >
-      <LinkedInIcon />
-    </a>
-    <a
-      href='https://github.com/jesuszvl'
-      target='_blank'
-      aria-label='See my code at Github'
-    >
-      <GithubIcon />
-    </a>
-  </footer>
+  <div class={styles.content}>
+    <div class={styles.description}>
+      <p class={styles.subtitle}>Hi there, I'm Jesús Zavala 👋</p>
+      <span class={styles.title}>Fullstack Software Engineer</span>
+      <p class={styles.subtitle}>
+        I help people and brands reach their goals by designing & building
+        user-centric digital products and interactive experiences
+      </p>
+      <div class={styles.social}>
+        <a href='mailto: jesus@zvl.dev' aria-label='Send me an email'>
+          <MailIcon />
+        </a>
+        <a
+          href='https://www.linkedin.com/in/jesuszvl/'
+          target='_blank'
+          aria-label='Contact me at LinkedIn'
+        >
+          <LinkedInIcon />
+        </a>
+        <a
+          href='https://github.com/jesuszvl'
+          target='_blank'
+          aria-label='See my code at Github'
+        >
+          <GithubIcon />
+        </a>
+      </div>
+    </div>
+    <Picture
+      src={profileImage}
+      alt='Profile Image'
+      width={320}
+      height={320}
+      class={styles.profile}
+      loading='eager'
+    />
+  </div>
 </section>

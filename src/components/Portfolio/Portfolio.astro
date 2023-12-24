@@ -20,16 +20,14 @@ import NodeIcon from '../../icons/NodeIcon.astro'
 const projects = [
   {
     title: 'makahco',
-    description:
-      'Improve your freestyle with free beats and expand your vocabulary with our AI-powered word and image generator.',
+    description: 'Rap & freestyle tools',
     url: 'https://makah.co',
     image: makahcoImage,
     stack: [ReactIcon, TypescriptIcon, SupabaseIcon, ViteIcon]
   },
   {
     title: 'VODYET',
-    description:
-      'Easily log daily transactions in an organized way and track expenses by category for a dynamic view of your spending.',
+    description: 'Budget app for daily expenses',
     url: 'https://vodyet.com',
     image: vodyetImage,
     stack: [ReactIcon, TypescriptIcon, NextIcon, SupabaseIcon]
@@ -37,15 +35,14 @@ const projects = [
   {
     title: 'PREP Libre',
     description:
-      'In Mexico, each electoral process incurs a cost of millions of pesos for institutions in preliminary results systems. We can do it better, and for free.',
+      'Open Platform for Electoral Preliminary Result Systems in México',
     url: 'https://preplibre.com',
     image: prepLibreImage,
     stack: [MongoIcon, ExpressIcon, ReactIcon, NodeIcon, TypescriptIcon]
   },
   {
     title: 'VS My Playlist',
-    description:
-      'Have you ever wanted to organize your Spotify playlists based on a ranking of song previews, with them interacting between each other? No? Okay, cool.',
+    description: 'Spotify Playlist Organizer',
     url: 'https://jesuszvl.github.io/vs-my-playlist',
     image: playlistImage,
     stack: [VueIcon, JavascriptIcon]
@@ -54,21 +51,27 @@ const projects = [
 ---
 
 <section class={styles.portfolio}>
-  <h1>Personal Projects</h1>
-  <div class={styles.projects}>
-    {
-      projects.map((project) => (
-        <ProjectCard
-          title={project.title}
-          description={project.description}
-          url={project.url}
-          image={project.image}
-        >
-          {project.stack.map((Icon) => (
-            <Icon slot='stack' />
-          ))}
-        </ProjectCard>
-      ))
-    }
+  <div class={styles.content}>
+    <h1 class={styles.title}>Projects</h1>
+    <p class={styles.subtitle}>
+      Prototypes, Digital Products (Apps, Websites, SaaS solutions) and design
+      systems which are visually pleasing, user-centric and easy to use.
+    </p>
+    <div class={styles.projects}>
+      {
+        projects.map((project) => (
+          <ProjectCard
+            title={project.title}
+            description={project.description}
+            url={project.url}
+            image={project.image}
+          >
+            {project.stack.map((Icon) => (
+              <Icon slot='stack' />
+            ))}
+          </ProjectCard>
+        ))
+      }
+    </div>
   </div>
 </section>

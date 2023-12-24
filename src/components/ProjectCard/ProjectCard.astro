@@ -14,15 +14,10 @@ const { title, description, image, url } = Astro.props
 ---
 
 <article class={styles.project}>
-  <Image class={styles.image} src={image} alt={title} />
   <section class={styles.content}>
     <a class={styles.title} target='_blank' href={url} rel='noreferrer'>
       {title}
-      <ExternalIcon />
     </a>
     <p>{description}</p>
-    <footer class={styles.stack}>
-      <slot name='stack' />
-    </footer>
   </section>
 </article>

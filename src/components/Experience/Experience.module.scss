@@ -3,9 +3,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
   padding: 64px 0;
+
+  h1 {
+    color: white;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: 640px) {
+    max-width: 640px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1024px;
+  }
+
+  @media (min-width: 1172px) {
+    max-width: 1172px;
+  }
 }
 
 .companies {
