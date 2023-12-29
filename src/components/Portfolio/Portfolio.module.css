@@ -11,21 +11,34 @@
 .content {
   display: flex;
   flex-direction: column;
-  width: 100%;
+}
 
-  @media (min-width: 640px) {
+@media (max-width: 640px) {
+  .content {
+    padding: 0px 16px;
+  }
+}
+
+@media (min-width: 640px) {
+  .content {
     max-width: 640px;
   }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .content {
     max-width: 768px;
   }
+}
 
-  @media (min-width: 1024px) {
+@media (min-width: 1024px) {
+  .content {
     max-width: 1024px;
   }
+}
 
-  @media (min-width: 1172px) {
+@media (min-width: 1172px) {
+  .content {
     max-width: 1172px;
   }
 }
