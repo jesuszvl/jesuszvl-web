@@ -49,6 +49,7 @@
 }
 
 .company {
+  cursor: pointer;
   font-size: 24px;
   font-weight: 800;
 }
@@ -58,7 +59,9 @@
 }
 
 .link {
-  &:hover {
-    color: white;
-  }
+  cursor: pointer;
+}
+
+.link:hover {
+  color: white;
 }

@@ -5,33 +5,41 @@
   max-width: 560px;
   border-radius: 12px;
   overflow: hidden;
-  background-color: #fcd926;
   color: black;
   cursor: pointer;
+  min-height: 240px;
 }
 
 .title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.4);
-  margin-bottom: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 8px;
+
+  &.isTextLight {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .description {
   font-size: 34px;
   font-weight: 700;
+
+  &.isTextLight {
+    color: white;
+  }
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  padding: 24px;
 }
 
 .image {
   height: auto;
-  width: 100%;
-  aspect-ratio: 1.8;
+  width: 50%;
+  aspect-ratio: 0.6;
 }
 
 .stack {

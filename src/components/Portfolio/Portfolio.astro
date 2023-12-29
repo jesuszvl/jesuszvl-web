@@ -1,6 +1,6 @@
 ---
 import ProjectCard from '../ProjectCard/ProjectCard.tsx'
-import styles from './Portfolio.module.scss'
+import styles from './Portfolio.module.css'
 import makahcoImage from '../../images/portfolio/makahco.jpg'
 import vodyetImage from '../../images/portfolio/vodyet.jpg'
 import prepLibreImage from '../../images/portfolio/preplibre.jpg'
@@ -23,28 +23,36 @@ const projects = [
     description: 'Rap & freestyle tools',
     url: 'https://makah.co',
     image: makahcoImage,
-    stack: [ReactIcon, TypescriptIcon, SupabaseIcon, ViteIcon]
+    stack: [ReactIcon, TypescriptIcon, SupabaseIcon, ViteIcon],
+    color: '#fcd926',
+    isTextLight: false
   },
   {
     title: 'VODYET',
     description: 'Budget app for daily expenses',
     url: 'https://vodyet.com',
     image: vodyetImage,
-    stack: [ReactIcon, TypescriptIcon, NextIcon, SupabaseIcon]
+    stack: [ReactIcon, TypescriptIcon, NextIcon, SupabaseIcon],
+    color: '#2ca143',
+    isTextLight: true
   },
   {
     title: 'PREP LIBRE',
     description: 'Open Platform for Electoral Preliminary Results',
     url: 'https://preplibre.com',
     image: prepLibreImage,
-    stack: [MongoIcon, ExpressIcon, ReactIcon, NodeIcon, TypescriptIcon]
+    stack: [MongoIcon, ExpressIcon, ReactIcon, NodeIcon, TypescriptIcon],
+    color: '#ed8b1c',
+    isTextLight: true
   },
   {
     title: 'VS MY PLAYLIST',
     description: 'Spotify Playlist Organizer',
     url: 'https://jesuszvl.github.io/vs-my-playlist',
     image: playlistImage,
-    stack: [VueIcon, JavascriptIcon]
+    stack: [VueIcon, JavascriptIcon],
+    color: '#2b2667',
+    isTextLight: true
   }
 ]
 ---
@@ -65,6 +73,8 @@ const projects = [
             description={project.description}
             url={project.url}
             image={project.image}
+            color={project.color}
+            isTextLight={project.isTextLight}
           >
             {project.stack.map((Icon) => (
               <Icon slot='stack' />
