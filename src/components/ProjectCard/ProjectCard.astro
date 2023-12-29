@@ -1,6 +1,5 @@
 ---
-import styles from './ProjectCard.module.scss'
-import classNames from 'classnames'
+import styles from './ProjectCard.module.css'
 
 interface Props {
   title: string
@@ -17,23 +16,11 @@ const { title, description, image, url, color, isTextLight } = Astro.props
 <div class={styles.project} style={{ background: color }}>
   <a href={url} target='_blank' rel='noopener noreferrer'>
     <section class={styles.content}>
-      <h1
-        class={classNames([
-          styles.title,
-          {
-            [styles.isTextLight]: isTextLight
-          }
-        ])}
-      >
+      <h1 class:list={[styles.title, { [styles.isTextLight]: isTextLight }]}>
         {title}
       </h1>
       <p
-        class={classNames([
-          styles.description,
-          {
-            [styles.isTextLight]: isTextLight
-          }
-        ])}
+        class:list={[styles.description, { [styles.isTextLight]: isTextLight }]}
       >
         {description}
       </p>

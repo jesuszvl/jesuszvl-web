@@ -20,19 +20,19 @@
   font-weight: 700;
   color: rgba(0, 0, 0, 0.6);
   margin-bottom: 8px;
+}
 
-  &.isTextLight {
-    color: rgba(255, 255, 255, 0.6);
-  }
+.title.isTextLight {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .description {
   font-size: 34px;
   font-weight: 700;
+}
 
-  &.isTextLight {
-    color: white;
-  }
+.description.isTextLight {
+  color: white;
 }
 
 .content {
