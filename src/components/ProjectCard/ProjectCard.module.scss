@@ -8,6 +8,11 @@
   color: black;
   cursor: pointer;
   min-height: 240px;
+  transition: transform 0.15s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
 }
 
 .title {

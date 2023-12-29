@@ -1,5 +1,5 @@
 ---
-import ProjectCard from '../ProjectCard/ProjectCard.tsx'
+import ProjectCard from '../ProjectCard/ProjectCard.astro'
 import styles from './Portfolio.module.css'
 import makahcoImage from '../../images/portfolio/makahco.jpg'
 import vodyetImage from '../../images/portfolio/vodyet.jpg'
@@ -68,7 +68,6 @@ const projects = [
       {
         projects.map((project) => (
           <ProjectCard
-            client:load
             title={project.title}
             description={project.description}
             url={project.url}

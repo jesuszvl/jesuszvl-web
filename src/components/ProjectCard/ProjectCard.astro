@@ -1,0 +1,43 @@
+---
+import styles from './ProjectCard.module.scss'
+import classNames from 'classnames'
+
+interface Props {
+  title: string
+  description: string
+  image: any
+  url: string
+  color: string
+  isTextLight?: boolean
+}
+
+const { title, description, image, url, color, isTextLight } = Astro.props
+---
+
+<div class={styles.project} style={{ background: color }}>
+  <a href={url} target='_blank' rel='noopener noreferrer'>
+    <section class={styles.content}>
+      <h1
+        class={classNames([
+          styles.title,
+          {
+            [styles.isTextLight]: isTextLight
+          }
+        ])}
+      >
+        {title}
+      </h1>
+      <p
+        class={classNames([
+          styles.description,
+          {
+            [styles.isTextLight]: isTextLight
+          }
+        ])}
+      >
+        {description}
+      </p>
+      <img src={image.src} alt={title} class={styles.image} />
+    </section>
+  </a>
+</div>
