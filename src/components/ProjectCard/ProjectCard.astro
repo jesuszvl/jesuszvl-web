@@ -16,14 +16,19 @@ const { title, description, image, url, color, isTextLight } = Astro.props
 <div class={styles.project} style={{ background: color }}>
   <a href={url} target='_blank' rel='noopener noreferrer'>
     <section class={styles.content}>
-      <h1 class:list={[styles.title, { [styles.isTextLight]: isTextLight }]}>
-        {title}
-      </h1>
-      <p
-        class:list={[styles.description, { [styles.isTextLight]: isTextLight }]}
-      >
-        {description}
-      </p>
+      <div class={styles.info}>
+        <h1 class:list={[styles.title, { [styles.isTextLight]: isTextLight }]}>
+          {title}
+        </h1>
+        <p
+          class:list={[
+            styles.description,
+            { [styles.isTextLight]: isTextLight }
+          ]}
+        >
+          {description}
+        </p>
+      </div>
       <img src={image.src} alt={title} class={styles.image} />
     </section>
   </a>
