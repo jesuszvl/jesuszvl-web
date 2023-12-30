@@ -1,0 +1,121 @@
+---
+import ProjectCard from './ProjectCard.astro'
+import makahcoImage from '../images/portfolio/makahco.png'
+import vodyetImage from '../images/portfolio/vodyet.png'
+import prepLibreImage from '../images/portfolio/preplibre.png'
+import playlistImage from '../images/portfolio/playlist.png'
+
+import ReactIcon from '../icons/ReactIcon.astro'
+import ViteIcon from '../icons/ViteIcon.astro'
+import NextIcon from '../icons/NextIcon.astro'
+import SupabaseIcon from '../icons/SupabaseIcon.astro'
+import TypescriptIcon from '../icons/TypescriptIcon.astro'
+import JavascriptIcon from '../icons/JavascriptIcon.astro'
+import VueIcon from '../icons/VueIcon.astro'
+import MongoIcon from '../icons/MongoIcon.astro'
+import ExpressIcon from '../icons/ExpressIcon.astro'
+import NodeIcon from '../icons/NodeIcon.astro'
+
+const projects = [
+  {
+    title: 'MAKAHCO',
+    description: 'Rap & freestyle tools',
+    url: 'https://makah.co',
+    image: makahcoImage,
+    stack: [ReactIcon, TypescriptIcon, SupabaseIcon, ViteIcon],
+    color: '#fcd926',
+    isTextLight: false
+  },
+  {
+    title: 'VODYET',
+    description: 'Budget app for daily expenses',
+    url: 'https://vodyet.com',
+    image: vodyetImage,
+    stack: [ReactIcon, TypescriptIcon, NextIcon, SupabaseIcon],
+    color: '#2ca143',
+    isTextLight: true
+  },
+  {
+    title: 'PREP LIBRE',
+    description: 'Open Platform for Electoral Preliminary Results',
+    url: 'https://preplibre.com',
+    image: prepLibreImage,
+    stack: [MongoIcon, ExpressIcon, ReactIcon, NodeIcon, TypescriptIcon],
+    color: '#ed8b1c',
+    isTextLight: true
+  },
+  {
+    title: 'VS MY PLAYLIST',
+    description: 'Spotify Playlist Organizer',
+    url: 'https://jesuszvl.github.io/vs-my-playlist',
+    image: playlistImage,
+    stack: [VueIcon, JavascriptIcon],
+    color: '#2b2667',
+    isTextLight: true
+  }
+]
+---
+
+<section class='portfolio' id='projects'>
+  <div class='responsive-content'>
+    <h1 class='title'>Projects</h1>
+    <p class='subtitle'>Open source projects, web apps and experimentals.</p>
+    <div class='projects'>
+      {
+        projects.map((project) => (
+          <ProjectCard
+            title={project.title}
+            description={project.description}
+            url={project.url}
+            image={project.image}
+            color={project.color}
+            isTextLight={project.isTextLight}
+          >
+            {project.stack.map((Icon) => (
+              <Icon slot='stack' />
+            ))}
+          </ProjectCard>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 48px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .responsive-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .title {
+    font-size: 42px;
+    color: white;
+    margin-bottom: 32px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    margin-bottom: 42px;
+  }
+</style>

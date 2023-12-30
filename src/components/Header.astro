@@ -1,5 +1,5 @@
 <header>
-  <div class='content'>
+  <section class='responsive-content'>
     <a href='/' class='company'>
       zvl<span class='sign'>.</span>dev
     </a>
@@ -10,7 +10,7 @@
         <li><a href='/#experience'>Experience</a></li>
       </ul>
     </nav>
-  </div>
+  </section>
 </header>
 
 <style>
@@ -26,7 +26,7 @@
     backdrop-filter: saturate(180%) blur(20px);
     color: white;
   }
-  .content {
+  .responsive-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,37 +34,10 @@
     width: 100%;
     height: 100%;
   }
-  @media (max-width: 640px) {
-    .content {
-      padding: 0px 16px;
-    }
 
+  @media (max-width: 640px) {
     nav {
       display: none;
-    }
-  }
-
-  @media (min-width: 640px) {
-    .content {
-      max-width: 640px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .content {
-      max-width: 768px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .content {
-      max-width: 1024px;
-    }
-  }
-
-  @media (min-width: 1172px) {
-    .content {
-      max-width: 1172px;
     }
   }
 

@@ -1,6 +1,5 @@
 ---
 import { Image } from 'astro:assets'
-import styles from './Company.module.css'
 
 interface Props {
   name: string
@@ -12,6 +11,16 @@ interface Props {
 const { name, logo } = Astro.props
 ---
 
-<span class={styles.company}>
+<span class='company'>
   <Image src={logo} alt={name} height={32} />
 </span>
+
+<style>
+  .company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 calc(16.66% - 18px);
+    padding: 16px;
+  }
+</style>
