@@ -1,0 +1,121 @@
+---
+import JavascriptIcon from '../icons/JavascriptIcon.astro'
+import PythonIcon from '../icons/PythonIcon.astro'
+import RubyIcon from '../icons/RubyIcon.astro'
+import TypescriptIcon from '../icons/TypescriptIcon.astro'
+import PHPIcon from '../icons/PHPIcon.astro'
+import JavaIcon from '../icons/JavaIcon.astro'
+---
+
+<section class='skillset' id='skills'>
+  <section class='responsive-content'>
+    <h2>Skills</h2>
+    <p>I know a thing or two in the following areas</p>
+    <div class='skill-selector'>
+      <button class='active'>Languages</button>
+      <button>Frontend</button>
+      <button>Backend</button>
+    </div>
+    <ul>
+      <li>
+        <JavascriptIcon />
+        <span>JavaScript</span>
+      </li>
+      <li>
+        <TypescriptIcon />
+        <span>TypeScript</span>
+      </li>
+      <li>
+        <PythonIcon />
+        <span>Python</span>
+      </li>
+      <li>
+        <RubyIcon />
+        <span>Ruby</span>
+      </li>
+      <li><PHPIcon /><span>PHP</span></li>
+      <li><JavaIcon /><span>Java</span></li>
+    </ul>
+  </section>
+</section>
+
+<style>
+  .skillset {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 64px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .responsive-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  h2 {
+    color: white;
+    margin-bottom: 32px;
+  }
+
+  p {
+    font-size: 24px;
+    margin-bottom: 42px;
+  }
+
+  .skill-selector {
+    display: inline-block;
+    width: fit-content;
+    border-radius: 120px;
+    padding: 4px;
+    background-color: rgba(255, 255, 255, 0.11);
+
+    & button {
+      background-color: transparent;
+      width: 120px;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 12px 24px;
+      border-radius: 120px;
+
+      &.active {
+        background-color: #2f9085;
+      }
+
+      @media (max-width: 640px) {
+        width: 80px;
+        font-size: 14px;
+        padding: 6px 12px;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.11);
+    box-shadow:
+      0 2px 6px 0 rgba(0, 0, 0, 0.05),
+      0 0 3px 0 rgba(0, 0, 0, 0.1);
+
+    color: rgba(255, 255, 255, 0.87);
+    font-weight: 700;
+    border-radius: 12px;
+    gap: 12px;
+  }
+</style>
