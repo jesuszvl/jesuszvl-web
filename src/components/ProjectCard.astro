@@ -1,0 +1,70 @@
+---
+import { Image } from 'astro:assets'
+interface Props {
+  title: string
+  description: string
+  image: any
+  url: string
+  color: string
+  isLight?: boolean
+}
+
+const { title, description, image, url, color, isLight } = Astro.props
+---
+
+<a href={url} target='_blank' rel='noopener noreferrer'>
+  <article style={{ background: color }}>
+    <section class:list={['info', { ['isLight']: isLight }]}>
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </section>
+    <Image src={image} alt={title} />
+  </article>
+</a>
+
+<style>
+  article {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    max-width: 560px;
+    border-radius: 12px;
+    overflow: hidden;
+    color: black;
+    transition: transform 0.15s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.6);
+
+    .isLight & {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  p {
+    font-size: 34px;
+    font-weight: 700;
+    .isLight & {
+      color: white;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+</style>
