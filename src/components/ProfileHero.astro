@@ -1,0 +1,113 @@
+---
+import { Picture } from 'astro:assets'
+import profileImage from '../images/profile.jpg'
+import MailIcon from '../icons/MailIcon.astro'
+import LinkedInIcon from '../icons/LinkedInIcon.astro'
+import GithubIcon from '../icons/GithubIcon.astro'
+---
+
+<section class='hero'>
+  <section class='responsive-content'>
+    <section class='description'>
+      <p>
+        Hey, I'm Jesús <span style={{ color: 'white' }}>👋</span>
+      </p>
+      <h1>Fullstack Software Engineer</h1>
+      <p>
+        +12 years of experience being completely dedicated and passionate about
+        crafting solid and scalable web products with great user interfaces.
+      </p>
+      <nav>
+        <a href='mailto: jesus@zvl.dev' aria-label='Send me an email'>
+          <MailIcon />
+        </a>
+        <a
+          href='https://www.linkedin.com/in/jesuszvl/'
+          target='_blank'
+          aria-label='Contact me at LinkedIn'
+        >
+          <LinkedInIcon />
+        </a>
+        <a
+          href='https://github.com/jesuszvl'
+          target='_blank'
+          aria-label='See my code at Github'
+        >
+          <GithubIcon />
+        </a>
+      </nav>
+    </section>
+    <Picture
+      src={profileImage}
+      alt='Profile Image'
+      width={320}
+      height={320}
+      class='profile'
+      loading='eager'
+    />
+  </section>
+</section>
+
+<style>
+  .hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 48px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .responsive-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    gap: 32px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    max-width: 640px;
+  }
+
+  h1 {
+    line-height: 1;
+    font-weight: 800;
+    color: #2f9085;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .profile {
+    border-radius: 12px;
+    gap: 8px;
+  }
+
+  nav {
+    display: flex;
+    gap: 46px;
+  }
+
+  @media (max-width: 640px) {
+    .responsive-content {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .description {
+      text-align: center;
+    }
+
+    nav {
+      justify-content: center;
+    }
+  }
+</style>

@@ -1,0 +1,82 @@
+---
+import gametime from '../icons/gametime.svg'
+import ieebc from '../icons/ieebc.svg'
+import timbox from '../icons/timbox.svg'
+import srax from '../icons/srax.svg'
+import iconos from '../icons/iconos.png'
+
+import Company from './Company.astro'
+
+const EXPERIENCE = [
+  {
+    name: 'gametime',
+    logo: gametime
+  },
+  {
+    name: 'ieebc',
+    logo: ieebc
+  },
+  {
+    name: 'timbox',
+    logo: timbox
+  },
+  {
+    name: 'srax',
+    logo: srax
+  },
+  {
+    name: 'iconos',
+    logo: iconos
+  }
+]
+---
+
+<section class='experience' id='experience'>
+  <section class='responsive-content'>
+    <h2>Work Experience</h2>
+    <p>Places I've contributed delivering high quality code.</p>
+    <ul>
+      {
+        EXPERIENCE.map((company) => {
+          return <Company {...company} />
+        })
+      }
+    </ul>
+  </section>
+</section>
+
+<style>
+  .experience {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 64px 0;
+  }
+
+  .responsive-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  h2 {
+    color: white;
+    margin-bottom: 32px;
+  }
+
+  p {
+    font-size: 24px;
+    margin-bottom: 42px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding-top: 16px;
+    width: 100%;
+  }
+</style>

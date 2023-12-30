@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets'
+
+interface Props {
+  name: string
+  logo: any
+}
+
+const { name, logo } = Astro.props
+---
+
+<span>
+  <Image src={logo} alt={name} height={32} />
+</span>
+
+<style>
+  span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 calc(16.66% - 18px);
+    padding: 16px;
+  }
+</style>
