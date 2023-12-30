@@ -9,12 +9,12 @@ interface Props {
 const { name, logo } = Astro.props
 ---
 
-<span>
+<li>
   <Image src={logo} alt={name} height={32} />
-</span>
+</li>
 
 <style>
-  span {
+  li {
     display: flex;
     flex-direction: column;
     align-items: center;
