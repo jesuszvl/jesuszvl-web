@@ -4,19 +4,17 @@ import { Image } from 'astro:assets'
 interface Props {
   name: string
   logo: any
-  time: string
-  url: string
 }
 
 const { name, logo } = Astro.props
 ---
 
-<span class='company'>
+<span>
   <Image src={logo} alt={name} height={32} />
 </span>
 
 <style>
-  .company {
+  span {
     display: flex;
     flex-direction: column;
     align-items: center;

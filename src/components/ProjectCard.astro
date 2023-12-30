@@ -11,7 +11,7 @@ interface Props {
 const { title, description, image, url, color, isTextLight } = Astro.props
 ---
 
-<div class='project' style={{ background: color }}>
+<article style={{ background: color }}>
   <a href={url} target='_blank' rel='noopener noreferrer'>
     <section class='content'>
       <div class='info'>
@@ -25,10 +25,10 @@ const { title, description, image, url, color, isTextLight } = Astro.props
       <img src={image.src} alt={title} class='image' />
     </section>
   </a>
-</div>
+</article>
 
 <style>
-  .project {
+  article {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -40,7 +40,7 @@ const { title, description, image, url, color, isTextLight } = Astro.props
     transition: transform 0.15s ease-in-out;
   }
 
-  .project:hover {
+  article:hover {
     transform: scale(1.05);
   }
 
