@@ -32,16 +32,17 @@ const EXPERIENCE = [
 ---
 
 <section class='experience' id='experience'>
-  <div class='responsive-content'>
-    <h1>Work Experience</h1>
-    <nav class='companies'>
+  <section class='responsive-content'>
+    <h2>Work Experience</h2>
+    <p>Places I've contributed delivering high quality code.</p>
+    <ul>
       {
         EXPERIENCE.map((company) => {
           return <Company {...company} />
         })
       }
-    </nav>
-  </div>
+    </ul>
+  </section>
 </section>
 
 <style>
@@ -54,17 +55,23 @@ const EXPERIENCE = [
     padding: 64px 0;
   }
 
-  .experience h1 {
-    color: white;
-  }
-
   .responsive-content {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  .companies {
+  h2 {
+    color: white;
+    margin-bottom: 32px;
+  }
+
+  p {
+    font-size: 24px;
+    margin-bottom: 42px;
+  }
+
+  ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

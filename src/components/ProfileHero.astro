@@ -8,14 +8,14 @@ import GithubIcon from '../icons/GithubIcon.astro'
 
 <section class='hero'>
   <section class='responsive-content'>
-    <div class='description'>
-      <p class='subtitle'>
+    <section class='description'>
+      <p>
         Hey, I'm Jesús <span style={{ color: 'white' }}>👋</span>
       </p>
-      <span class='title'>Fullstack Software Engineer</span>
-      <p class='subtitle'>
-        +12 years of experience. Passionate about crafting solid and scalable
-        web products with great user interfaces.
+      <h1>Fullstack Software Engineer</h1>
+      <p>
+        +12 years of experience being completely dedicated and passionate about
+        crafting solid and scalable web products with great user interfaces.
       </p>
       <nav>
         <a href='mailto: jesus@zvl.dev' aria-label='Send me an email'>
@@ -36,7 +36,7 @@ import GithubIcon from '../icons/GithubIcon.astro'
           <GithubIcon />
         </a>
       </nav>
-    </div>
+    </section>
     <Picture
       src={profileImage}
       alt='Profile Image'
@@ -68,6 +68,34 @@ import GithubIcon from '../icons/GithubIcon.astro'
     gap: 32px;
   }
 
+  .description {
+    display: flex;
+    flex-direction: column;
+    max-width: 640px;
+  }
+
+  h1 {
+    line-height: 1;
+    font-weight: 800;
+    color: #2f9085;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .profile {
+    border-radius: 12px;
+    gap: 8px;
+  }
+
+  nav {
+    display: flex;
+    gap: 46px;
+  }
+
   @media (max-width: 640px) {
     .responsive-content {
       flex-direction: column;
@@ -81,38 +109,5 @@ import GithubIcon from '../icons/GithubIcon.astro'
     nav {
       justify-content: center;
     }
-  }
-
-  .profile {
-    border-radius: 12px;
-    gap: 8px;
-  }
-
-  .description {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    max-width: 640px;
-  }
-
-  .title {
-    line-height: 1;
-    font-weight: 800;
-    font-size: 42px;
-    color: #2f9085;
-    margin-bottom: 16px;
-  }
-
-  .subtitle {
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1;
-    margin: 0px;
-    margin-bottom: 16px;
-  }
-
-  nav {
-    display: flex;
-    gap: 46px;
   }
 </style>
