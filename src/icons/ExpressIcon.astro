@@ -1,7 +1,16 @@
+---
+interface Props {
+  width?: string
+  height?: string
+}
+
+const { width = 48, height = 48 } = Astro.props as Props
+---
+
 <svg
+  width={width}
+  height={height}
   fill='#ffffff'
-  width='28'
-  height='28'
   viewBox='0 0 24 24'
   role='img'
   xmlns='http://www.w3.org/2000/svg'

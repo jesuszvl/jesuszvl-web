@@ -1,4 +1,13 @@
-<svg width='24' height='24' viewBox='0 0 32 32' fill='#000000'
+---
+interface Props {
+  width?: string
+  height?: string
+}
+
+const { width = 48, height = 48 } = Astro.props as Props
+---
+
+<svg width={width} height={height} viewBox='0 0 32 32' fill='#000000'
   ><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g
     id='SVGRepo_tracerCarrier'
     stroke-linecap='round'
