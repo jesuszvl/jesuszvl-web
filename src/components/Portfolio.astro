@@ -43,8 +43,7 @@ const projects = [
 
 <section class='portfolio' id='projects'>
   <section class='responsive-content'>
-    <h2>Personal Projects</h2>
-    <p>Open source projects, web apps and experimentals.</p>
+    <h2>Projects</h2>
     <section class='projects'>
       {
         projects.map((project) => (
@@ -70,13 +69,13 @@ const projects = [
     text-align: center;
     gap: 12px;
     width: 100%;
-    padding: 48px 0px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .responsive-content {
     display: flex;
     flex-direction: column;
+    padding: 48px 24px;
   }
 
   .projects {
@@ -96,7 +95,7 @@ const projects = [
 
   h2 {
     color: white;
-    margin-bottom: 32px;
+    margin-bottom: 48px;
   }
 
   p {
