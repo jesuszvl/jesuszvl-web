@@ -12,27 +12,30 @@ interface Props {
 const { title, description, image, url, color, isLight } = Astro.props
 ---
 
-<a href={url} target='_blank' rel='noopener noreferrer'>
-  <article style={{ background: color }}>
-    <section class:list={['info', { ['isLight']: isLight }]}>
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </section>
-    <Image src={image} alt={title} />
-  </article>
+<a
+  href={url}
+  target='_blank'
+  rel='noopener noreferrer'
+  style={{ background: color }}
+>
+  <section class:list={['info', { ['isLight']: isLight }]}>
+    <h3>{title}</h3>
+    <p>{description}</p>
+  </section>
+  <Image src={image} alt={title} />
 </a>
 
 <style>
-  article {
+  a {
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 100%;
     max-width: 560px;
     border-radius: 12px;
-    overflow: hidden;
     color: black;
-    transition: transform 0.15s ease-in-out;
+    transition: transform 0.15s ease;
+    width: 100%;
+    overflow: hidden;
 
     &:hover {
       transform: scale(1.05);
@@ -69,5 +72,8 @@ const { title, description, image, url, color, isLight } = Astro.props
   img {
     width: 100%;
     height: auto;
+  }
+
+  a {
   }
 </style>
