@@ -1,11 +1,13 @@
 ---
-const color = Astro.props.color || 'gray'
+const color = Astro.props.color || 'black'
+const width = Astro.props.width || '36'
+const height = Astro.props.height || '35'
 ---
 
 <svg
   class='icon'
-  width='36'
-  height='35'
+  width={width}
+  height={height}
   viewBox='0 0 24 24'
   stroke-width='2'
   stroke={color}

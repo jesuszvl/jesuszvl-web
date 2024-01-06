@@ -14,7 +14,7 @@ const { name, logo, time, description } = Astro.props
 <li>
   <div class='dot'></div>
   <time>{time}</time>
-  <h3>{name}</h3>
+  <Image src={logo} alt={name} height={32} />
   <p>{description}</p>
 </li>
 
@@ -39,6 +39,11 @@ const { name, logo, time, description } = Astro.props
 
   h3 {
     color: white;
+    margin-bottom: 16px;
+  }
+
+  img {
+    margin-top: 16px;
     margin-bottom: 16px;
   }
 
