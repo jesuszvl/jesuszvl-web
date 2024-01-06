@@ -115,25 +115,20 @@ import RailsIcon from '../icons/RailsIcon.astro'
 
 <style>
   .tabbed {
-    overflow-x: hidden; /* so we could easily hide the radio inputs */
-    padding-bottom: 16px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
     align-items: center;
+    gap: 24px;
+    padding-bottom: 16px;
   }
 
   .tabbed [type='radio'] {
-    /* hiding the inputs */
     display: none;
   }
 
   .tabs {
     display: flex;
-    align-items: stretch;
     list-style: none;
-    padding: 0;
-    padding-bottom: 24px;
     border-radius: 120px;
     padding: 4px;
     background-color: rgba(255, 255, 255, 0.11);
@@ -147,7 +142,7 @@ import RailsIcon from '../icons/RailsIcon.astro'
     background-color: transparent;
     letter-spacing: 1px;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.4s;
     width: 120px;
     font-weight: 700;
     font-size: 18px;
