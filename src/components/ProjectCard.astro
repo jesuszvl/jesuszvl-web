@@ -19,7 +19,7 @@ const { title, description, image, url, color, isLight } = Astro.props
   style={{ background: color }}
 >
   <section class:list={['info', { ['isLight']: isLight }]}>
-    <h4>{title}</h4>
+    <h3>{title}</h3>
     <p>{description}</p>
   </section>
   <Image src={image} alt={title} />
@@ -30,7 +30,7 @@ const { title, description, image, url, color, isLight } = Astro.props
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-width: 560px;
+    max-width: 480px;
     border-radius: 12px;
     color: black;
     transition: transform 0.15s ease;
@@ -48,9 +48,10 @@ const { title, description, image, url, color, isLight } = Astro.props
     padding: 24px;
   }
 
-  h4 {
+  h3 {
     font-weight: 700;
     color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
   }
 
   p {
@@ -59,7 +60,7 @@ const { title, description, image, url, color, isLight } = Astro.props
   }
 
   .isLight {
-    & h4 {
+    & h3 {
       color: rgba(255, 255, 255, 0.6);
     }
 
