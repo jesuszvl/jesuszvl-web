@@ -1,9 +1,9 @@
 ---
 import ProjectCard from './ProjectCard.astro'
-import makahcoImage from '../images/portfolio/makahco.png'
-import vodyetImage from '../images/portfolio/vodyet.png'
-import prepLibreImage from '../images/portfolio/preplibre.png'
-import playlistImage from '../images/portfolio/playlist.png'
+import makahcoImage from '../images/portfolio/makahco.webp'
+import vodyetImage from '../images/portfolio/vodyet.webp'
+import prepLibreImage from '../images/portfolio/preplibre.webp'
+import playlistImage from '../images/portfolio/playlist.webp'
 
 const projects = [
   {
@@ -81,13 +81,17 @@ const projects = [
 
   .projects {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    flex-direction: row;
+    align-items: stretch;
     gap: 32px;
     width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   h2 {
