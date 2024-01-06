@@ -9,24 +9,39 @@ import Company from './Company.astro'
 
 const EXPERIENCE = [
   {
-    name: 'gametime',
-    logo: gametime
+    name: 'Gametime',
+    logo: gametime,
+    time: 'Mar 2022 - Present',
+    description:
+      'Seasoned software engineer with Gametime, contributing to the development of a highly functional web product. Engaged in cross-functional collaboration with Design, Product, and Backend teams, specializing in efficient and reusable front-end systems. Implemented successful SEO strategies, resulting in a notable increase in user conversion. Active participant in product releases and code reviews.'
   },
   {
-    name: 'ieebc',
-    logo: ieebc
+    name: 'IEEBC',
+    logo: ieebc,
+    time: 'Nov 2019 - Mar 2022',
+    description:
+      'In this role at the Electoral Institute, I designed, implemented, and maintained a robust electoral system, reducing discrepancies by 30%. Collaborated with internal departments to build Django-based RESTFUL APIs, enhancing data tracking and management efficiency. Played a pivotal role in electoral data management, ensuring reliable results during critical elections.'
   },
   {
-    name: 'timbox',
-    logo: timbox
+    name: 'Timbox',
+    logo: timbox,
+    time: 'Feb 2018 - Dec 2018',
+    description:
+      'Contributed significantly as a software engineer at Timbox, specializing in developing and maintaining SOAP Web Services with Ruby on Rails. Successfully integrated OpenPay API, streamlining the payment process. Delivered frontend applications with AngularJS, improving the efficiency of invoice stamping and credit usage tracking.'
   },
   {
-    name: 'srax',
-    logo: srax
+    name: 'SRAX',
+    logo: srax,
+    time: 'Oct 2016 - Feb 2018',
+    description:
+      'During my tenure at SRAX, I built Laravel REST API services with a focus on handlebars-templates for dynamic content rendering. Managed server configuration and resources efficiently using Puppet, reducing deployment time. Contributed to the automation of server configuration, enhancing scalability and resource efficiency.'
   },
   {
-    name: 'iconos',
-    logo: iconos
+    name: 'Iconos',
+    logo: iconos,
+    time: 'Dec 2010 - Sep 2016',
+    description:
+      'Started as an IT support provider, later developing BPA systems for over 10 mid-level companies in the region. Achieved a 40% reduction in system downtime for clients through effective IT support. Initiated successful migrations to new software solutions, creating modern and efficient IT environments tailored to client needs.'
   }
 ]
 ---
@@ -34,25 +49,23 @@ const EXPERIENCE = [
 <section class='experience' id='experience'>
   <section class='responsive-content'>
     <h2>Work Experience</h2>
-    <p>Places I've contributed delivering high quality code.</p>
-    <ul>
+    <ol>
       {
         EXPERIENCE.map((company) => {
           return <Company {...company} />
         })
       }
-    </ul>
+    </ol>
   </section>
 </section>
 
 <style>
   .experience {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 64px 0;
+    padding: 64px 16px;
   }
 
   .responsive-content {
@@ -68,15 +81,12 @@ const EXPERIENCE = [
 
   p {
     font-size: 24px;
-    margin-bottom: 42px;
+    margin-bottom: 24px;
   }
 
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    padding-top: 16px;
-    width: 100%;
+  ol {
+    position: relative;
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.5);
+    margin-left: 0.75rem;
   }
 </style>
